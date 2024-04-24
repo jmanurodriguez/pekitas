@@ -1,0 +1,488 @@
+/*TIPOGRAFIA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&display=swap');
+/*
+font-family: "Cantarell", sans-serif;
+font-family: "Questrial", sans-serif;
+*/
+
+/* RESETEO */
+body {
+    background-color: #ebead3; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+	
+}
+	
+	/* Imagen Logo ( si pasas con el cursor por el logo desde cualquiera de las paginas te lleva al index.html (pagina inicio) */
+
+
+.imagen-con-fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+	background-color: #E7C8C0;
+ }
+ 
+ /*------------------------------Barra de busquesa---------------------------------*/
+ .search-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="search"] {
+    margin-right: 10px;
+    border-radius: 15px; /* Esto redondea las esquinas de la barra de búsqueda */
+    border: none; /* Esto elimina el borde predeterminado */
+    padding: 10px; /* Esto añade un poco de espacio alrededor del texto dentro de la barra de búsqueda */
+    font-size: 16px; /* Esto cambia el tamaño de la fuente del texto dentro de la barra de búsqueda */
+    background-color: #f2f2f2;
+}
+ 
+ /* ------------- Fuente y estilo de los titulos -----------------*/
+ .pekitas-title {
+    text-align: center;
+    color: #da2f84d0;
+    font-family: "Questrial", sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #e5d5d0;
+    box-shadow: 0px 8px 16px 0px rgba(231, 39, 183, 0.2);
+    font-size: 23px;
+	
+}
+ 
+ /* Texto con Font Questrial ss, color rosa, 20px margin y padding*/
+ 
+.texto-Q20pink, .bienvenidos {
+    font-family: "Cantarell", sans-serif;
+    color: #ac196e8e;
+}
+
+.texto-Q20pink {
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Clases para darle formato a los parrafos */
+
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagen-texto {
+    flex-basis: 45%; 
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-family: "Questrial", sans-serif;
+    color: #da2f84d0;
+    font-size: 23px;
+    
+}
+
+
+
+ /* Uso del Overflow hiidden para que el logo quede redondo y no cuadrado*/
+ 
+.redondo{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    
+}
+
+
+.redondo img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    
+	
+}
+	/*--------------------Navegación list item----------------*/
+
+.bienvenidos li, h1 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.bienvenidos li {
+    color: rgba(221, 66, 125, 0.432);
+    background-color: #E7C8C0;
+}
+
+main h2 {
+    font-family: "Questrial", sans-serif;
+}
+
+h1 {
+    color: #ac196e8e; 
+    font-size: 20px;
+    font-family: "Cantarell", sans-serif;
+}
+
+/* Nav */
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    color: #E7C8C0;
+}
+
+nav li a {
+    color: #ac196e8e;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Cantarell", sans-serif;
+}
+
+.navegacion {
+    background-color: #E7C8C0;
+    font-family: "Cantarell", sans-serif;
+    text-align: center;
+}
+
+
+/* Formato para que las imagenes no queden cuadradas */
+
+.imagen-redonda {
+    display: inline-block;
+    border-radius: 50px;
+    padding-inline-start: 20px;
+    margin: 40px;
+}
+
+
+/* Iframes ---- Trate de que me quede uno abajo de cada parrafo en dos columnas, lo voy a mejorar con flex-box -------- */
+
+.parrafos, .parrafo-arriba, .parrafo-abajo {
+    display: flex;
+    font-family: "Questrial", sans-serif;
+    color: #da2f84d0;
+    font-size: 23px;
+    gap: 10px; 
+	text-align: center; 
+	padding: 2%;
+}
+
+.parrafos {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* --------------------- Formularios --------------------*/
+.contenido-formulario {
+    display: flex;
+    justify-content: space-between; 
+    font-family: "Questrial", sans-serif;
+    color: #da2f84d0;
+    font-size: 20px;
+}
+
+/* Footer   ----- Formato del Footer ------- */
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    padding: 2%;
+    font-family: "Questrial", sans-serif;
+    color: #890daf;
+
+}
+
+.footer-links li a {
+    color: #c00c60a2; 
+}
+
+footer {
+    position: relative;
+    color: #7d0cbe;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.footer-background {
+    background-color: #e5d5d0;
+
+}
+
+
+/*----------- SECCION GALERIA INDEX -----------*/
+.gallery {
+    background-color: #ebead3;
+    font-family: "Cantarell", sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    container-name: gallery;
+    container-type: inline-size ;
+    justify-content: space-evenly;
+}
+
+.gallery__title {
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: #da2f84d0;
+}
+
+.gallery__project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    min-height: 80vh;
+}
+
+.gallery__project {
+    background-image: linear-gradient(#bb0374ad, #d0124848), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhDIr8sOGkc9CIPSc51moa9fUK4wsoDrk1M-nltJqTQ&s");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+}
+
+.gallery__project:nth-child(1) {
+    background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/index-2.jpeg");
+}
+
+.gallery__project:nth-child(2) {
+    background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/nosotros1.jpeg");
+}
+
+.gallery__project:nth-child(3) {
+    background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/sepillo.jpeg");
+}
+
+.gallery__project:nth-child(4) {
+    background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/index-3.jpeg");
+}
+
+.gallery__project:nth-child(5) {
+    background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/index-1.jpeg");
+}
+
+.gallery__project:nth-child(6) {
+    background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/productos\ 4.jpeg");
+}
+
+.gallery__project:hover {
+    opacity: 
+    0.74;
+    outline: 2px solid #fff6;
+}
+
+
+/*----------- GALLERIA QUERIES -----------*/
+
+@container gallery (min-width:900px){
+    .gallery__project-container {
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    }
+
+    .gallery__project:first-child {
+        grid-column: span 2;
+    }
+    .gallery__project:nth-child(6){
+        grid-column: span 2;
+    }
+}
+
+@container gallery (min-width:1300px){
+    .gallery__project-container {
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    }
+
+    .gallery__project:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .gallery__project:nth-child(6){
+        grid-column: span 4;
+    }
+}
+
+
+/*----------- GALERIA ENDS -----------*/
+
+
+/* NAV QUERIES */
+
+.redondo{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    
+}
+
+
+.redondo img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+/*----------- CONTACT SECTION -----------*/
+
+.form {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    container-name: form;
+    container-type: inline-size;
+}
+
+.form__form {
+    padding: 12px;
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+    margin-bottom: 4px;
+}
+
+.form__input-container :is(input,textarea) {
+    width: 100%;
+    padding: 9px;
+    font-size: 16px;
+    margin: 4px;
+    border: none;
+    box-shadow: 2px 2px 4px #0003;
+    background-color: #fffd;
+}
+
+.form__input-container textarea {
+    resize:none;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.form__input-container input[type="submit"] {
+    padding: 12px;
+    background-color: #48e;
+    color: #fff;
+}
+
+.form_title {
+    font-size: 2.4rem;
+}
+/*----------- CONTACT QUERIES -----------*/
+
+@container form (min-width:600px){
+    .form__form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "name lastname"
+    "email email"
+    "message message"
+    "button button";
+    gap: 12px;
+    background-image: linear-gradient(#18233f06, #18233f33);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 40px #0006;
+    }
+
+    .form__input-container:first-child {
+        grid-area: name;
+    }
+
+    .form__input-container:nth-child(2) {
+        grid-area: lastname;
+    }
+
+    .form__input-container:nth-child(3) {
+        grid-area: email;
+    }
+
+    .form__input-container:nth-child(4) {
+        grid-area: message;
+    }
+
+    .form__input-container:nth-child(5) {
+        grid-area: button;
+    }
+
+    .form__input-container :is(input,textarea) {
+    box-shadow: none;
+    border-radius: 4px;
+    }
+}
+
+/*----------- CONTACT ENDS -----------*/
+
+
+/* ------------------CAROUSEL--------------------------------*/
+
+.carousel{
+    width: 600px;
+    margin: auto;
+    border-radius: 15px; 
+    overflow: visible; 
+}
+
+.carousel-inner{
+    border-radius: 15px; 
+}
+
+.carousel-item img{
+    height: 820px;
+    border-radius: 15px; /* Ajusta este valor a tu gusto */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    border-radius: 15px; /* Ajusta este valor a tu gusto */
+    background: transparent; /* Hace el fondo de los controles transparente */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el color de fondo de los íconos de los controles */
+}
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    color: white; /* Texto blanco */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px; /* Ajusta el tamaño de la fuente a tu gusto */
+}
