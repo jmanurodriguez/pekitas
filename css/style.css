@@ -609,3 +609,64 @@ footer {
         right: 0;
     }
 }
+/* -----------------Page Nuestros Productos Queries ------------ */
+
+/* Estilos base */
+.contenedor-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagen-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.imagen-redonda {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Para móviles */
+@media only screen and (max-width: 480px) {
+    .contenedor-imagenes {
+        padding: 1em;
+    }
+
+    .imagen-texto {
+        margin: 1em 0;
+    }
+}
+
+/* Para tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .contenedor-imagenes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .imagen-texto {
+        flex: 0 0 calc(50% - 2em);
+        max-width: calc(50% - 2em);
+    }
+}
+
+/* Para laptops */
+@media only screen and (min-width: 769px) {
+    .contenedor-imagenes {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .imagen-texto {
+        flex: 0 0 calc(33% - 2em);
+        max-width: calc(33% - 2em);
+    }
+}
+
