@@ -203,25 +203,7 @@ h1 {
 
 /* Iframes ---- Trate de que me quede uno abajo de cada parrafo en dos columnas, lo voy a mejorar con flex-box -------- */
 
-.parrafos, .parrafo-arriba, .parrafo-abajo {
-    display: flex;
-    font-family: "Questrial", sans-serif;
-    color: #da2f84d0;
-    font-size: 23px;
-    gap: 10px; 
-	text-align: center; 
-	padding: 2%;
-}
 
-.parrafos {
-    flex-direction: column;
-    gap: 20px;
-}
-
-.iframe-container {
-    display: flex;
-    justify-content: space-around;
-}
 
 /* --------------------- Formularios --------------------*/
 .contenido-formulario {
@@ -393,54 +375,34 @@ footer {
 }
 
 /* ---------------------NUESTRO PLANETA SECTION---------------------- */
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-items: stretch;
-    align-items: stretch;
+.container {
+    display: grid;
     grid-template-areas:
-      "parrafo-1 parrafo-2"
-      "iframe-1 iframe-2"
-      "parrafo-3 parrafo-4";
-  }
-  
-  .parrafo-1 { 
+        "parrafo-1 parrafo-2"
+        "iframe-1 iframe-2"
+        "parrafo-3 parrafo-4";
+    grid-gap: 20px;
+    justify-items: center;
+    border-radius: 20px;
+}
+
+.parrafo-1 { grid-area: parrafo-1; }
+.parrafo-2 { grid-area: parrafo-2; }
+.iframe-1 { grid-area: iframe-1; }
+.iframe-2 { grid-area: iframe-2; }
+.parrafo-3 { grid-area: parrafo-3; }
+.parrafo-4 { grid-area: parrafo-4; }
+
+.styled-paragraph {
     font-size: 20px;
     margin: 20px;
     padding: 20px;
     text-align: center;
     font-weight: bold;
-   }
-  
-  .parrafo-2 { 
+    font-family: "Questrial", sans-serif;
+    color: #da2f84d0;
     font-size: 20px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .iframe-1 { grid-area: iframe-1; }
-  
-  .iframe-2 { grid-area: iframe-2; }
-  
-  .parrafo-3 { 
-    font-size: 20px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .parrafo-4 { 
-    font-size: 20px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
-  }
+}
 
 
 /*----------- CONTACT SECTION -----------*/
