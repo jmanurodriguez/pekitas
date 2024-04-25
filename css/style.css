@@ -392,6 +392,33 @@ footer {
     height: 100%;
 }
 
+/* ---------------------NUESTRO PLANETA SECTION---------------------- */
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "parrafo-1 parrafo-2"
+      "iframe-1 iframe-2"
+      "parrafo-3 parrafo-4";
+  }
+  
+  .parrafo-1 { grid-area: parrafo-1; }
+  
+  .parrafo-2 { grid-area: parrafo-2; }
+  
+  .iframe-1 { grid-area: iframe-1; }
+  
+  .iframe-2 { grid-area: iframe-2; }
+  
+  .parrafo-3 { grid-area: parrafo-3; }
+  
+  .parrafo-4 { grid-area: parrafo-4; }
+
+
 /*----------- CONTACT SECTION -----------*/
 
 .form {
