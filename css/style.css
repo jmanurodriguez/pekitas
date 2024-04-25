@@ -20,7 +20,11 @@ body {
 	
 	/* Imagen Logo ( si pasas con el cursor por el logo desde cualquiera de las paginas te lleva al index.html (pagina inicio) */
 
-
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
 .imagen-con-fondo {
     display: flex;
     justify-content: center;
@@ -201,10 +205,6 @@ h1 {
 }
 
 
-/* Iframes ---- Trate de que me quede uno abajo de cada parrafo en dos columnas, lo voy a mejorar con flex-box -------- */
-
-
-
 /* --------------------- Formularios --------------------*/
 .contenido-formulario {
     display: flex;
@@ -375,73 +375,224 @@ footer {
 }
 
 /* ---------------------NUESTRO PLANETA SECTION---------------------- */
-.container {
-    display: grid;
-    grid-template-areas:
-        "parrafo-1 parrafo-2"
-        "iframe-1 iframe-2"
-        "parrafo-3 parrafo-4";
-    grid-gap: 20px;
+
+#profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.profile {
+    container-name: profile;
+    container-type: inline-size;
+    display: flex;
+    flex-flow: wrap;
     justify-items: center;
-    border-radius: 20px;
 }
 
-.parrafo-1 { grid-area: parrafo-1; }
-.parrafo-2 { grid-area: parrafo-2; }
-.iframe-1 { grid-area: iframe-1; }
-.iframe-2 { grid-area: iframe-2; }
-.parrafo-3 { grid-area: parrafo-3; }
-.parrafo-4 { grid-area: parrafo-4; }
+.profile__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    max-width: 900px;
+    
+}
 
-.styled-paragraph {
-    font-size: 20px;
+.profile__data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.profile__iframe-container {
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__iframe{
+    width: 100%; 
+    height: auto; 
+}
+
+
+
+.planeta {
+    display: flex;
+    font-size: 18px;
     margin: 20px;
     padding: 20px;
     text-align: center;
-    font-weight: bold;
-    font-family: "Questrial", sans-serif;
-    color: #da2f84d0;
-    font-size: 20px;
+    color: #ac196e8e;
+    margin: 20px 0;
 }
+.load-bar, .load-bar2 {
+    width: 100%;
+    margin: 10px 10px; /* Esto añade un margen superior e inferior de 20px y un margen izquierdo y derecho de 0 */
+}
+h1 {
+    color: #26a
+}
+.profile__info-container{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+}
+.profile__info-container h2{
+    color: #26a;
+}
+
+.profile__info-container h4{
+    color: #2266aa85;
+    font-size: 20PX;
+}
+
+.profile__info {
+list-style: none;
+display: flex;
+margin: 10px;
+max-width: 600px;
+margin-left: 0;
+align-items: center;
+}
+
+.load-bar {
+    border: 2px solid #48e;
+    border-radius: 8px;
+    color: #fff;
+    padding: 2px;
+    font-size: 12px;
+    width: 80%;
+    margin: 4px;
+    margin-left: 0;
+}
+
+.profile__info-name {
+    color: #48e;
+}
+
+.load-bar__bar {
+    background-color: #48e;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+.bar--71{
+    width: 71%;
+}
+.bar--97{
+    width: 90%;
+}
+.bar--10{
+    width: 10%;
+}
+.bar--3{
+    width: 3%;
+}
+
+
+
+.profile__info2 {
+    list-style: none;
+    display: flex;
+    margin: 12px;
+    max-width: 600px;
+    margin-left: 0;
+    align-items: center;
+    }
+    
+.load-bar2 {
+        border: 2px solid #33c333;
+        border-radius: 8px;
+        color: #fff;
+        padding: 2px;
+        font-size: 8px;
+        width: 60%;
+        margin: 2px;
+        margin-left: 0;
+    }
+    
+.load-bar__bar2 {
+        background-color: #278c27e4;
+        border-radius: 4px;
+        padding: 4px 6px;
+    }
+    
+.bar--31{
+        width: 31%;
+    }
+    
+.bar--6{
+        width: 10%;
+    }
+
+    .bar--43{
+        width: 43%;
+    }
+    
+.bar--75{
+        width: 75%;
+    }
 
 /* ---------------------NUESTRO PLANETA SECTION ENDS---------------------- */
 
 /* ---------------------NUESTRO PLANETA QUERIES---------------------- */
 
-/* Para móviles */
-@media only screen and (max-width: 480px)  {
-    .container {
-        grid-template-areas:
-            "parrafo-1"
-            "iframe-1"
-            "parrafo-2"
-            "parrafo-3"
-            "iframe-2"
-            "parrafo-4";
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    main {
+        max-width: 100%;
+    }
+    .profile__iframe{
+        width: 100%;
+        height: auto;
+    }
+    .profile__info-container{
+        width: 100%;
     }
 }
 
-/* Para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .container {
-        grid-template-areas:
-            "parrafo-1 parrafo-2"
-            "iframe-1 iframe-1"
-            "parrafo-3 parrafo-3"
-            "iframe-2 iframe-2"
-            "parrafo-4 parrafo-4";
+/* Estilos para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    main {
+        max-width: 100%;
+    }
+    .profile__iframe{
+        width: 100%;
+        height: auto;
+    }
+    .profile__info-container{
+        width: 100%;
     }
 }
 
-/* Para laptops */
-@media (min-width: 1025px) {
-    .container {
-        grid-template-areas:
-            "parrafo-1 iframe-1"
-            "parrafo-2 parrafo-3"
-            "iframe-2 parrafo-4";
+/* Estilos para laptops y desktops */
+@media only screen and (min-width: 1025px) {
+    main {
+        max-width: 1200px;
+    }
+    .profile__iframe{
+        width: 420px;
+        height: 400px;
+    }
+    .profile__info-container{
+        width: 800px;
     }
 }
+
 
 /* ---------------------NUESTRO PLANETA QUERIES ENDS---------------------- */
 
@@ -941,4 +1092,6 @@ footer {
 
 
 
+
+/* ------------ TEST ------------ */
 
