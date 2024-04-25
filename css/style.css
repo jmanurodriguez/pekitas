@@ -8,17 +8,18 @@ font-family: "Questrial", sans-serif;
 */
 
 /* RESETEO */
-body {
-    background-color: #ebead3; 
-}
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
-	
+    box-sizing: border-box;
 }
-	
+
 	/* Imagen Logo ( si pasas con el cursor por el logo desde cualquiera de las paginas te lleva al index.html (pagina inicio) */
+body {
+    background-color: #ebead3;
+}
 
     main {
         max-width: 1200px;
@@ -30,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-	background-color: #E7C8C0;
+    background-image: linear-gradient(#ebead3, #cd1a6e33);
  }
  
  /*------------------------------Barra de busquesa---------------------------------*/
@@ -54,22 +55,21 @@ body {
     font-size: 16px; /* Esto cambia el tamaño de la fuente del texto dentro de la barra de búsqueda */
     background-color: #f2f2f2;
 }
- 
- /* ------------- Fuente y estilo de los titulos -----------------*/
- .pekitas-title {
+
+/* ------------- Fuente y estilo de los titulos -----------------*/
+
+.pekitas-title {
     text-align: center;
     color: #da2f84d0;
     font-family: "Questrial", sans-serif;
     padding: 20px;
     border-radius: 8px;
-    background-color: #e5d5d0;
+    background-image: linear-gradient(#d42d976c, #cd1a6e2a);
     box-shadow: 0px 8px 16px 0px rgba(231, 39, 183, 0.2);
-    font-size: 23px;
+    font-size: 20px;
 	
 }
- 
- /* Texto con Font Questrial ss, color rosa, 20px margin y padding*/
- 
+/* Texto con Font Questrial ss, color rosa, 20px margin y padding*/
 .texto-Q20pink, .bienvenidos {
     font-family: "Cantarell", sans-serif;
     color: #ac196e8e;
@@ -102,10 +102,7 @@ body {
     
 }
 
-
-
- /* Uso del Overflow hiidden para que el logo quede redondo y no cuadrado*/
- 
+/* Uso del Overflow hiidden para que el logo quede redondo y no cuadrado*/
 .redondo{
     width: 200px;
     height: 200px;
@@ -131,7 +128,7 @@ body {
 
 .bienvenidos li {
     color: rgba(221, 66, 125, 0.432);
-    background-color: #E7C8C0;
+    background-image: linear-gradient(#d01d586c, #cd1a6e2a);
 }
 
 main h2 {
@@ -149,7 +146,7 @@ h1 {
     /* ------Esto es nuevo, le agregue un display al navbar*/
 
     nav {
-        background-color: #E7C8C0;
+        background-image: linear-gradient(#ca249385, #cd1a6e2a);
         /* font-family: sans-serif; */
     }
     
@@ -168,7 +165,7 @@ h1 {
         text-decoration: none;
         display: inline-block;
         padding: 10px;
-        background-color: #E7C8C0;
+        background-color: linear-gradient(#ca24933f, #cd1a6e2a);;
     }
     
     .ul__link:hover {
@@ -182,8 +179,8 @@ h1 {
     }
     
     .bienvenidos li {
-        color: rgba(221, 66, 125, 0.432);
-        background-color: #E7C8C0;
+        color: #dd427d6e;
+        background-color: linear-gradient(#ca249385, #cd1a6e2a);;
     }
     
     main h2 {
@@ -219,16 +216,17 @@ h1 {
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 20px; 
     padding: 2%;
     font-family: "Questrial", sans-serif;
     color: #890daf;
+    width: 100%;
 
 }
 
 .footer-links li a {
     color: #c00c60a2; 
     text-decoration: none;
+    width: 100%;
 }
 
 .footer-links li a:hover {
@@ -239,7 +237,7 @@ h1 {
     }
 footer {
     position: relative;
-    color: #7d0cbe;
+    color: #7d0cbe; 
 }
 
 .footer-text {
@@ -249,13 +247,89 @@ footer {
 }
 .footer-background {
     background-color: #e5d5d0;
+    width: 100%;
+}
 
+/* ----------------FOOTER QUERIES-------------------- */
+/* Estilos para móviles */
+
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .footer-links {
+        flex-direction: row;
+        gap: 15px;
+        padding: 1.5%;
+    }
+    .footer-text {
+        position: static;
+        text-align: center;
+    }
+}
+
+/* Estilos para laptops */
+@media (min-width: 1025px) {
+    .footer-links {
+        flex-direction: row;
+        gap: 20px;
+        padding: 2%;
+    }
+    .footer-text {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+/*---------------- NAV QUERIES ----------- */
+/* Estilos para móviles */
+@media only screen and (max-width: 480px) {
+    .redondo {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    nav li {
+        padding: 5px;
+    }
+}
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .redondo {
+        width: 150px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    nav li {
+        padding: 8px;
+    }
+}
+
+/* Estilos para laptops */
+@media (min-width: 1025px) {
+    .redondo {
+        width: 200px;
+        height: 200px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    nav li {
+        padding: 10px;
+    }
 }
 
 
-/*----------- SECCION GALERIA INDEX -----------*/
+
+/* ----------------NAV QUERIES END-------------------- */
+
+/*----------- GALERIA INDEX SECTION -----------*/
 .gallery {
-    background-color: #ebead3;
+    background-image: linear-gradient 0px 0px 10px 10px solid (#ebead3, #cd1a6e43);
     font-family: "Cantarell", sans-serif;
     color: #fff;
     min-height: 100vh;
@@ -283,7 +357,10 @@ footer {
     padding: 12px;
     min-height: 80vh;
 }
-
+.deco {
+    text-decoration: none;
+    color: #fff;
+}
 .gallery__project {
     background-image: linear-gradient(#bb0374ad, #d0124848), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhDIr8sOGkc9CIPSc51moa9fUK4wsoDrk1M-nltJqTQ&s");
     background-position: center;
@@ -354,341 +431,9 @@ footer {
 }
 
 
-/*----------- GALERIA ENDS -----------*/
+/*----------- GALERIA INDEX ENDS -----------*/
 
-
-/* ------------------NAV QUERIES------------------------ */
-
-.redondo{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 100%;
-    
-}
-
-
-.redondo img {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-}
-
-/* ---------------------NUESTRO PLANETA SECTION---------------------- */
-
-#profile{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.profile {
-    container-name: profile;
-    container-type: inline-size;
-    display: flex;
-    flex-flow: wrap;
-    justify-items: center;
-}
-
-.profile__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #fff;
-    max-width: 900px;
-    
-}
-
-.profile__data-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.profile__description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.profile__iframe-container {
-    max-height: 500px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile__iframe{
-    width: 100%; 
-    height: auto; 
-}
-
-
-
-.planeta {
-    display: flex;
-    font-size: 18px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    color: #ac196e8e;
-    margin: 20px 0;
-}
-.load-bar, .load-bar2 {
-    width: 100%;
-    margin: 10px 10px; /* Esto añade un margen superior e inferior de 20px y un margen izquierdo y derecho de 0 */
-}
-h1 {
-    color: #26a
-}
-.profile__info-container{
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-
-}
-.profile__info-container h2{
-    color: #26a;
-}
-
-.profile__info-container h4{
-    color: #2266aa85;
-    font-size: 20PX;
-}
-
-.profile__info {
-list-style: none;
-display: flex;
-margin: 10px;
-max-width: 600px;
-margin-left: 0;
-align-items: center;
-}
-
-.load-bar {
-    border: 2px solid #48e;
-    border-radius: 8px;
-    color: #fff;
-    padding: 2px;
-    font-size: 12px;
-    width: 80%;
-    margin: 4px;
-    margin-left: 0;
-}
-
-.profile__info-name {
-    color: #48e;
-}
-
-.load-bar__bar {
-    background-color: #48e;
-    border-radius: 4px;
-    padding: 4px 6px;
-}
-
-.bar--71{
-    width: 71%;
-}
-.bar--97{
-    width: 90%;
-}
-.bar--10{
-    width: 10%;
-}
-.bar--3{
-    width: 3%;
-}
-
-
-
-.profile__info2 {
-    list-style: none;
-    display: flex;
-    margin: 12px;
-    max-width: 600px;
-    margin-left: 0;
-    align-items: center;
-    }
-    
-.load-bar2 {
-        border: 2px solid #33c333;
-        border-radius: 8px;
-        color: #fff;
-        padding: 2px;
-        font-size: 8px;
-        width: 60%;
-        margin: 2px;
-        margin-left: 0;
-    }
-    
-.load-bar__bar2 {
-        background-color: #278c27e4;
-        border-radius: 4px;
-        padding: 4px 6px;
-    }
-    
-.bar--31{
-        width: 31%;
-    }
-    
-.bar--6{
-        width: 10%;
-    }
-
-    .bar--43{
-        width: 43%;
-    }
-    
-.bar--75{
-        width: 75%;
-    }
-
-/* ---------------------NUESTRO PLANETA SECTION ENDS---------------------- */
-
-/* ---------------------NUESTRO PLANETA QUERIES---------------------- */
-
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    main {
-        max-width: 100%;
-    }
-    .profile__iframe{
-        width: 100%;
-        height: auto;
-    }
-    .profile__info-container{
-        width: 100%;
-    }
-}
-
-/* Estilos para tablets */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    main {
-        max-width: 100%;
-    }
-    .profile__iframe{
-        width: 100%;
-        height: auto;
-    }
-    .profile__info-container{
-        width: 100%;
-    }
-}
-
-/* Estilos para laptops y desktops */
-@media only screen and (min-width: 1025px) {
-    main {
-        max-width: 1200px;
-    }
-    .profile__iframe{
-        width: 420px;
-        height: 400px;
-    }
-    .profile__info-container{
-        width: 800px;
-    }
-}
-
-
-/* ---------------------NUESTRO PLANETA QUERIES ENDS---------------------- */
-
-/*----------- CONTACT SECTION -----------*/
-
-.form {
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 0;
-    container-name: form;
-    container-type: inline-size;
-}
-
-.form__form {
-    padding: 12px;
-    max-width: 600px;
-    width: 100%;
-    display: grid;
-    margin-bottom: 4px;
-}
-
-.form__input-container :is(input,textarea) {
-    width: 100%;
-    padding: 9px;
-    font-size: 16px;
-    margin: 4px;
-    border: none;
-    box-shadow: 2px 2px 4px #0003;
-    background-color: #fffd;
-}
-
-.form__input-container textarea {
-    resize:none;
-    min-height: 120px;
-    font-family: inherit;
-}
-
-.form__input-container input[type="submit"] {
-    padding: 12px;
-    background-color: #48e;
-    color: #fff;
-}
-
-.form_title {
-    font-size: 2.4rem;
-}
-/*----------- CONTACT QUERIES -----------*/
-
-@container form (min-width:600px){
-    .form__form {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "name lastname"
-    "email email"
-    "message message"
-    "button button";
-    gap: 12px;
-    background-image: linear-gradient(#18233f06, #18233f33);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 0px 40px #0006;
-    }
-
-    .form__input-container:first-child {
-        grid-area: name;
-    }
-
-    .form__input-container:nth-child(2) {
-        grid-area: lastname;
-    }
-
-    .form__input-container:nth-child(3) {
-        grid-area: email;
-    }
-
-    .form__input-container:nth-child(4) {
-        grid-area: message;
-    }
-
-    .form__input-container:nth-child(5) {
-        grid-area: button;
-    }
-
-    .form__input-container :is(input,textarea) {
-    box-shadow: none;
-    border-radius: 4px;
-    }
-}
-
-/*----------- CONTACT ENDS -----------*/
-
-
-/* ------------------CAROUSEL--------------------------------*/
+/* ------------------NOSOTROS CAROUSEL SECTION --------------------------------*/
 
 .carousel{
     width: 600px;
@@ -724,7 +469,7 @@ align-items: center;
     text-align: center;
     font-size: 20px; 
 }
-/* --------------CAROUSEL QUERIES---------------- */
+/* --------------NOSOTROS CAROUSEL QUERIES---------------- */
 /* Estilos para Moviles */
 
 @media only screen and (max-width: 480px) {
@@ -791,154 +536,343 @@ align-items: center;
         padding: 10px;
     }
 }
-/* Queries */
-/* Estilos para móviles */
-@media only screen and (max-width: 480px) {
-    .redondo {
-        width: 100px;
-        height: 100px;
-    }
-    h1 {
-        font-size: 16px;
-    }
-    nav li {
-        padding: 5px;
-    }
+/* ---------------------NOSOTROS CAROUSEL ENDS---------------------- */
+
+/* ---------------------NUESTRO PLANETA SECTION---------------------- */
+
+#profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.profile {
+    container-name: profile;
+    container-type: inline-size;
+    display: flex;
+    flex-flow: wrap;
+    justify-items: center;
 }
 
-/* Estilos para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .redondo {
-        width: 150px;
-        height: 150px;
-    }
-    h1 {
-        font-size: 18px;
-    }
-    nav li {
-        padding: 8px;
-    }
-}
-
-/* Estilos para laptops */
-@media (min-width: 1025px) {
-    .redondo {
-        width: 200px;
-        height: 200px;
-    }
-    h1 {
-        font-size: 20px;
-    }
-    nav li {
-        padding: 10px;
-    }
-}
-
-
-
-/* ----------------NAV QUERIES END-------------------- */
-
-
-/* ----------------FOOTER QUERIES-------------------- */
-/* Estilos para móviles */
-@media only screen and (max-width: 480px)  {
-    .footer-links {
-        flex-direction: column;
-        gap: 10px;
-        padding: 1%;
-    }
-    .footer-text {
-        position: static;
-        text-align: center;
-    }
-}
-
-/* Estilos para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .footer-links {
-        flex-direction: row;
-        gap: 15px;
-        padding: 1.5%;
-    }
-    .footer-text {
-        position: static;
-        text-align: center;
-    }
-}
-
-/* Estilos para laptops */
-@media (min-width: 1025px) {
-    .footer-links {
-        flex-direction: row;
-        gap: 20px;
-        padding: 2%;
-    }
-    .footer-text {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-}
-/* -----------------Page Nuestros Productos Queries ------------ */
-
-/* Estilos base */
-.contenedor-imagenes {
+.profile__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: #fff;
+    max-width: 900px;
+    
 }
 
-.imagen-texto {
+.profile__data-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em;
+    justify-content: space-between;
 }
 
-.imagen-redonda {
-    border-radius: 50%;
+.profile__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.profile__iframe-container {
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__iframe{
+    width: 100%; 
+    height: auto; 
+}
+
+.planeta {
+    display: flex;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #ac196e8e;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.load-bar, .load-bar2 {
     width: 100%;
-    max-width: 400px;
-    height: auto;
+    margin: 10px 10px; 
+}
+h1 {
+    color: #26a
+}
+.profile__info-container{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+}
+.profile__info-container h2{
+    color: #26a;
 }
 
-/* Para móviles */
-@media only screen and (max-width: 480px) {
-    .contenedor-imagenes {
-        padding: 1em;
+.profile__info-container h4{
+    color: #2266aa85;
+    font-size: 20PX;
+}
+
+.profile__info {
+list-style: none;
+display: flex;
+margin: 10px;
+max-width: 600px;
+margin-left: 0;
+align-items: center;
+}
+
+.load-bar {
+    border: 2px solid #48e;
+    border-radius: 8px;
+    color: #fff;
+    padding: 2px;
+    font-size: 12px;
+    width: 80%;
+    margin: 4px;
+    margin-left: 0;
+    background-color: #ffffff80;
+}
+
+.profile__info-name {
+    color: #48e;
+}
+
+.load-bar__bar {
+    background-color: #48e;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+.bar--71{
+    width: 71%;
+}
+.bar--97{
+    width: 90%;
+}
+.bar--10{
+    width: 10%;
+}
+.bar--3{
+    width: 3%;
+}
+
+.profile__info2 {
+    list-style: none;
+    display: flex;
+    margin: 12px;
+    max-width: 600px;
+    margin-left: 0;
+    align-items: center;
+    }
+    
+.load-bar2 {
+        border: 2px solid #33c333;
+        border-radius: 8px;
+        color: #fff;
+        padding: 2px;
+        font-size: 8px;
+        width: 60%;
+        margin: 2px;
+        margin-left: 0;
+        background-color: #ffffff80;
+    }
+    
+.load-bar__bar2 {
+        background-color: #278c27e4;
+        border-radius: 4px;
+        padding: 4px 6px;
+    }
+    
+.bar--31{
+        width: 31%;
+    }
+    
+.bar--6{
+        width: 10%;
     }
 
-    .imagen-texto {
-        margin: 1em 0;
+    .bar--43{
+        width: 43%;
+    }
+    
+.bar--75{
+        width: 75%;
+    }
+
+/* ---------------------NUESTRO PLANETA SECTION ENDS---------------------- */
+
+/* ---------------------NUESTRO PLANETA QUERIES---------------------- */
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    main {
+        max-width: 100%;
+    }
+    .profile__iframe{
+        width: 100%; 
+        height: auto;
+    }
+    .profile__info-container{
+        width: 100%;
     }
 }
 
-/* Para tablets */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .contenedor-imagenes {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+/* Estilos para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    main {
+        max-width: 100%;
     }
+    .profile__iframe{
+        width: 100%;
+        height: auto;
+    }
+    .profile__info-container{
+        width: 100%;
+    }
+}
 
-    .imagen-texto {
-        flex: 0 0 calc(50% - 2em);
-        max-width: calc(50% - 2em);
+/* Estilos para laptops y desktops */
+@media only screen and (min-width: 1025px) {
+    main {
+        max-width: 1200px;
+    }
+    .profile__iframe{
+        width: 420px;
+        height: 400px;
+    }
+    .profile__info-container{
+        width: 800px;
     }
 }
 
-/* Para laptops */
-@media only screen and (min-width: 769px) {
-    .contenedor-imagenes {
-        flex-wrap: nowrap;
-        justify-content: space-around;
+
+/* ---------------------NUESTRO PLANETA QUERIES ENDS---------------------- */
+
+/*----------- CONTACT SECTION -----------*/
+.image__contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 40px;
+    flex-basis: 45%; 
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-family: "Questrial", sans-serif;
+    color: #da2f84d0;
+    font-size: 23px;
+}
+
+.image__contact {
+    border-radius: 20px;
+    box-shadow: #0003;
+}
+
+.form {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    container-name: form;
+    container-type: inline-size;
+}
+
+.form__form {
+    padding: 12px;
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+    margin-bottom: 4px;
+}
+
+.form__input-container :is(input,textarea) {
+    width: 100%;
+    padding: 9px;
+    font-size: 16px;
+    margin: 4px;
+    border: none;
+    box-shadow: 2px 2px 4px #0003;
+    background-color: #fffd;
+}
+
+.form__input-container textarea {
+    resize:none;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.form__input-container input[type="submit"] {
+    padding: 12px;
+    background-color: #48e;
+    color: #fff;
+}
+
+.form_title {
+    font-size: 2.4rem;
+}
+
+/*----------- CONTACT SECTION ENDS -----------*/
+
+/*----------- CONTACT QUERIES -----------*/
+
+@container form (min-width:600px){
+    .form__form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "name lastname"
+    "email email"
+    "message message"
+    "button button";
+    gap: 12px;
+    background-image: linear-gradient(#18233f06, #18233f33);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 40px #0006;
     }
 
-    .imagen-texto {
-        flex: 0 0 calc(33% - 2em);
-        max-width: calc(33% - 2em);
+    .form__input-container:first-child {
+        grid-area: name;
+    }
+
+    .form__input-container:nth-child(2) {
+        grid-area: lastname;
+    }
+
+    .form__input-container:nth-child(3) {
+        grid-area: email;
+    }
+
+    .form__input-container:nth-child(4) {
+        grid-area: message;
+    }
+
+    .form__input-container:nth-child(5) {
+        grid-area: button;
+    }
+
+    .form__input-container :is(input,textarea) {
+    box-shadow: none;
+    border-radius: 4px;
     }
 }
+
+/*----------- CONTACT ENDS -----------*/
+
+
 /* -----------------Page Nuestros Productos ------------ */
 
 /* Estilos base */
@@ -976,7 +910,7 @@ align-items: center;
     color: #c00c60a2;
     text-align: center;
     font-size: 20px;
-    font-family: font-family: "Cantarell", sans-serif;
+    font-family: "Cantarell", sans-serif;
 }
 
 .button {
