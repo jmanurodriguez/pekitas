@@ -1079,7 +1079,7 @@ p {
     }
     
     .portada__data-container {
-        background-color: beige
+        background-color: beige;
         display: flex;
         align-items: center;
         border-radius: 0px 25px 25px 0px;
@@ -1159,6 +1159,8 @@ p {
     font-size: 1.4rem;
     color: white;
     color: #2266aa85;
+    padding: 20px;
+    margin: 20px;
 }
 /*----------- CONTACT QUERIES -----------*/
 
