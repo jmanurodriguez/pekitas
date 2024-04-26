@@ -803,6 +803,7 @@ align-items: center;
     }
 }
 
+
 /*----------- CONTACT ENDS -----------*/
 
 
@@ -976,3 +977,6 @@ footer {
 
 /* ------------ TEST ------------ */
 
+.carousel-indicators {
+    display: none;
+}
