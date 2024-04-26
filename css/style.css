@@ -130,6 +130,9 @@ body {
     font-weight: 600;
 }
 
+.banner-item{
+    background-image: linear-gradient(#ebead3, #cd1a6e33);
+}
 .titulo-banner {
     font-size: 30px;
     color: #dd427d6e;
@@ -137,8 +140,10 @@ body {
     font-family: "Questrial", sans-serif;
     background-image: linear-gradient(#d42d976c, #cd1a6e2a);
     box-shadow: 0px 8px 16px 0px rgba(231, 39, 183, 0.2);
-    padding: 20px 20px 20px 20px;
+    margin-bottom: 80px;
 }
+
+
 
 	/*--------------------Navegación list item----------------*/
 
@@ -173,8 +178,8 @@ h1 {
     /* ------Esto es nuevo, le agregue un display al navbar*/
 
     nav {
-        background-image: linear-gradient(#ca249385, #cd1a6e2a);
-        /* font-family: sans-serif; */
+        background-image: linear-gradient(#cd1a6e33,#ebead3);
+        box-shadow: 1px 0px 2px 0px #e727b733;
     }
     
     .ul__list {
@@ -188,11 +193,13 @@ h1 {
     }
     
     .ul__link{
-        color: #fff;
+        color: #dd427e9c;
+        font-size: bolder;
+        font-family: "Cantarell", sans-serif;
         text-decoration: none;
         display: inline-block;
         padding: 10px;
-        background-color: linear-gradient(#ca24933f, #cd1a6e2a);;
+        background-color: linear-gradient(#ca24933f, #cd1a6e2a);
     }
     
     .ul__link:hover {
@@ -207,7 +214,7 @@ h1 {
     
     .bienvenidos li {
         color: #dd427d6e;
-        background-color: linear-gradient(#ca249385, #cd1a6e2a);;
+        background-color: linear-gradient(#ca249385, #cd1a6e2a);
     }
     
     main h2 {
@@ -765,12 +772,14 @@ align-items: center;
 h4 {
     color: #26a;
     font-size: 30px;
-    
+    text-align: center; 
 }
 
 p {
     color: #26a;
     font-size: 18px;  
+    text-align: center;
+    margin: 20px;
 }
 
 /* -------------PORTADA QUERIES--------------- */
