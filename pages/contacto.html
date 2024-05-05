@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pekitas Ecotienda</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        @media (max-width: 375px) {
+          .sm\:text-2xl {
+            font-size: 1.5rem;
+          }
+        }
+        @media (max-width: 768px) {
+          .md\:text-2xl {
+            font-size: 1.5rem;
+          }
+        }
+        @media (max-width: 1024px) {
+          .lg\:text-2xl {
+            font-size: 1.5rem;
+          }
+        }
+        @media (max-width: 1280px) {
+          .xl\:text-2xl {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    </style>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -58,57 +82,55 @@
     <p class="text__paragraph-items">GRACIAS POR CONFIAR EN PEKITAS ECOTIENDA! PARA COORDINAR LOS RETIROS O EL ENVIO DE TUS PRODUCTOS POR FAVOR ESCRIBIR AL WHATSAPP O AL INSTAGRAM.</p>
 
          <!---------------------------FORMULARIO CREADO CON TAILWIND CDN-------------------------------------------->
-
-      <section>
-        <div class="min-h-screen py-40" style="background-image: linear-gradient(115deg, #de18de9c)">
-          <div class="container mx-auto">
-            <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
-              <div class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center" style="background-image: url('../resorses/jabon-natural1.jpeg');">
-                <h4 class="text-pink600- text-3xl mb-3" style="text-shadow: 3px 3px 4px rgba(225, 32, 116, 0.608);">Bienvenidos!!!</h4> <!-- Añade una sombra de texto blanca con una leve opacidad -->
-                <div>
-                  <p class="text-pink-800 font-bold py-2 px-6" style="text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.608);">Pekitas Ecotienda es una tienda que se especializa en productos ecológicos y sostenibles. Nuestro objetivo es ayudarte a hacer un cambio positivo para nuestro planeta ofreciéndote productos que son amigables con el medio ambiente.
-                    Nuestro equipo de atención al cliente está siempre listo y dispuesto a ayudarte con cualquier consulta o pedido que puedas tener. Puedes contactarnos a través de nuestras diversas redes sociales, donde estaremos encantados de ayudarte a seleccionar y adquirir nuestros productos. Nos esforzamos por proporcionarte la mejor experiencia de compra posible, asegurándonos de que todas tus preguntas sean respondidas y que encuentres exactamente lo que estás buscando.</a></p>
+         <section>
+          <div class="min-h-screen py-40" style="background-image: linear-gradient(115deg, #de18de9c)">
+            <div class="container mx-auto">
+              <div class="flex flex-col sm:flex-row w-full sm:w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+                <div class="w-full sm:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center" style="background-image: url('../resorses/jabon-natural1.jpeg');">
+                  <h4 class="text-pink600- text-3xl mb-3 sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl" style="text-shadow: 3px 3px 4px rgba(225, 32, 116, 0.608);">Bienvenidos!!!</h4>
+                  <div>
+                    <p class="text-pink-800 font-bold py-2 px-6 sm:text-sm md:text-sm lg:text-sm xl:text-sm" style="text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.608);">Pekitas Ecotienda es una tienda que se especializa en productos ecológicos y sostenibles. Nuestro objetivo es ayudarte a hacer un cambio positivo para nuestro planeta ofreciéndote productos que son amigables con el medio ambiente.
+                      Nuestro equipo de atención al cliente está siempre listo y dispuesto a ayudarte con cualquier consulta o pedido que puedas tener. Puedes contactarnos a través de nuestras diversas redes sociales, donde estaremos encantados de ayudarte a seleccionar y adquirir nuestros productos. Nos esforzamos por proporcionarte la mejor experiencia de compra posible, asegurándonos de que todas tus preguntas sean respondidas y que encuentres exactamente lo que estás buscando</p>
+                  </div>
                 </div>
-              </div>
-              <div class="w-full lg:w-1/2 py-16 px-12">
-                <h2  class="text-3xl text-pink-400 mb-4">Registrate</h2>
-                <p class="mb-4 text-pink-400">
-                  Crea tu cuenta. Es gratis y solo tomara un minuto!!!
-                </p>
-                <form action="#">
-                  <form class="bg-custom shadow-2xl rounded-full px-8 pt-6 pb-8 mb-4" style="box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);">
-                  <div class="grid grid-cols-2 gap-5">
-                    <input type="text" placeholder="Nombre" class="border border-gray-400 py-1 px-2">
-                    <input type="text" placeholder="Apellido" class="border border-gray-400 py-1 px-2">
-                  </div>
-                  <div class="mt-5">
-                    <input type="text" placeholder="Celular: (+54 11-2222-2222)" class="border border-gray-400 py-1 px-2 w-full">
-                  </div>
-                  <div class="mt-5">
-                    <input type="password" placeholder="E-mail" class="border border-gray-400 py-1 px-2 w-full">
-                  </div>
-                  <div class="mt-5">
-                    <input type="password" placeholder="dirección" class="border border-gray-400 py-1 px-2 w-full">
-                  </div>
-                  <div class="mt-5">
-                    <input type="checkbox" class="border border-gray-400">
-                    <span>
-                      Acepto los <a href="./terminos.de.uso.html" class="text-pink-400 font-semibold">Terminos de uso</a> &  <a href="./terminos.de.uso.html" class="text-pink-400 font-semibold">Privacy Policy</a> 
-                    </span>
-                  </div>
-                  <div class="mt-5">
-                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Envía tu mensaje" rows="4"></textarea> <!-- Cambia el texto del cuadro de texto para enviar un mensaje a "Envía tu mensaje" -->
-                  </div>
-                  <div class="mt-5">
-                    <button class="w-full bg-purple-500 py-3 text-center text-white">Contactanos!!!</button>
-                  </div>
-                </form>
+                <div class="w-full sm:w-1/2 py-16 px-12">
+                  <h2  class="text-3xl text-pink-400 mb-4 sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl">Registrate</h2>
+                  <p class="mb-4 text-pink-400">
+                    Crea tu cuenta. Es gratis y solo tomara un minuto!!!
+                  </p>
+                  <form action="#">
+                    <form class="bg-custom shadow-2xl rounded-full px-8 pt-6 pb-8 mb-4" style="box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);">
+                    <div class="grid grid-cols-2 gap-5">
+                      <input type="text" placeholder="Nombre" class="border border-gray-400 py-1 px-2">
+                      <input type="text" placeholder="Apellido" class="border border-gray-400 py-1 px-2">
+                    </div>
+                    <div class="mt-5">
+                      <input type="text" placeholder="Celular: (+54 11-2222-2222)" class="border border-gray-400 py-1 px-2 w-full">
+                    </div>
+                    <div class="mt-5">
+                      <input type="password" placeholder="E-mail" class="border border-gray-400 py-1 px-2 w-full">
+                    </div>
+                    <div class="mt-5">
+                      <input type="password" placeholder="dirección" class="border border-gray-400 py-1 px-2 w-full">
+                    </div>
+                    <div class="mt-5">
+                      <input type="checkbox" class="border border-gray-400">
+                      <span>
+                        Acepto los <a href="./terminos.de.uso.html" class="text-pink-400 font-semibold">Terminos de uso</a> &  <a href="./terminos.de.uso.html" class="text-pink-400 font-semibold">Privacy Policy</a> 
+                      </span>
+                    </div>
+                    <div class="mt-5">
+                      <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Envía tu mensaje" rows="4"></textarea> <!-- Cambia el texto del cuadro de texto para enviar un mensaje a "Envía tu mensaje" -->
+                    </div>
+                    <div class="mt-5">
+                      <button class="w-full bg-purple-500 py-3 text-center text-white">Contactanos!!!</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      
+        </section>
     </main>
                             <!--Footer-->
             <footer>
