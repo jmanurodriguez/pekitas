@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pekitas Ecotienda</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
-<body class="texto-bienvenida">
+<body>
 
     <!--- Barra de Navegación -->
     <header>
@@ -21,20 +22,9 @@
             </div>
         </div>
 
-    <header class="header">
-      <input type="checkbox" class="header__checkbox" id="open-menu">
-      <label for="open-menu" class="header__open-nav-button" role="button">=</label>
-      <div class="header__logo-container">
-        <img class="header__logo" src="./manuindex.jpeg" />
-      </div>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
 
-        </ul>
-      </nav>
-    </header>
 
-        <nav class="navegacion">
+        <nav>
             <ul class="ul__list">
                 <li class="ul__item"><a href="./index.html" class="ul__link">Inicio</a></li>
                 <li class="ul__item"><a href="./pages/nuestros-productos.html" class="ul__link">Nuestros Productos</a></li>
@@ -43,6 +33,7 @@
                 <li class="ul__item"><a href="./pages/contacto.html" class="ul__link">Contacto</a></li>
             </ul>
         </nav>
+
       <!-- Barra de busqueda -->
 
         <div class="search-container">
@@ -51,17 +42,30 @@
                 <input type="submit" value="">
             </form>
         </div>
-        <div class="banner-item"><h1>Inicio/Nuestros Productos<h1>
-          <h2 class="bienvenidos">Bienvenidos a Pekitas Ecotienda</h2>
+
+        <div>
+                    <!-- TITULO IDENTIFICADOR DE PAGINA -->
+                    <h1 class="title__page-item">Inicio<h1>
+
+                      <!-- TITULO BIENVENIDA DE PAGINA -->
+                  
+                    <h2 class="title__welcome-item" >Bienvenidos a Pekitas Ecotienda</h2>
         </div>
-          <h3 class="titulo-banner">SUMATE A UN CAMBIO NATURAL</h3>
+
+
+
+        <!-- TITULO DE PAGINA -->
+        
+          <h3 class="title__banner-item">SUMATE A UN CAMBIO NATURAL</h3>
+        
+          
+
     </header>
     <div class="container-main">
       <main>
         <!-- Contenido principal-->
-        <section>
-            <div>
-                <p class="texto-Q20pink">
+            <div class="text__paragraph-item">
+                <p>
                     Bienvenidos a Pekitas Ecotienda, su destino confiable para productos de cosmética naturales
                     y
                     vegetales. En Pekitas Ecotienda, nos apasiona la belleza, pero creemos que no debe ser a
@@ -73,36 +77,42 @@
                     belleza que sea tan beneficiosa para usted como para el mundo que nos rodea.
                 </p>
             </div>
-        </section>
 
 
             <!-- Imagen con enlace relativo -->
 
             <section class="gallery" id="gallery">
-                <h2 class="gallery__title">Algunas de las tantas cosas que encontraras en Pekitas Ecotienda </h2>
-                <div class="gallery__project-container">
-                  <div class="gallery__project">
-                    <h2 class="gallery__project-name">JABÓN BATIDO</h2>
-                  </div>
+              <h4 class="gallery__title">Algunas de las tantas cosas que encontraras en Pekitas Ecotienda </h4>
+              <div class="gallery__project-container">
                 <div class="gallery__project">
-                  <h2 class="gallery__project-name">BÁLSAMO</h2>
+                  <h4 class="gallery__project-name animate__animated animate__heartBeat">JABÓN BATIDO</h4>
                 </div>
-                <div class="gallery__project">
-                  <h2 class="gallery__project-name">CEPILLO DE BAMBOO</h2>
-                </div>
-                <div class="gallery__project">
-                  <h2 class="gallery__project-name">VELAS AROMÁTICAS</h2>
-                </div>
-                <div class="gallery__project">
-                  <h2 class="gallery__project-name">AROMATIZANTES</h2>
-                </div>
-                <div class="gallery__project">
-                  <h2 class="gallery__project-name">JABÓN SOLIDO</h2>
-                </div>
+              <div class="gallery__project">
+                <h4 class="gallery__project-name animate__animated animate__heartBeat">BÁLSAMO</h4>
+              </div>
+              <div class="gallery__project">
+                <h4 class="gallery__project-name animate__animated animate__heartBeat">CEPILLO DE BAMBOO</h4>
+              </div>
+              <div class="gallery__project">
+                <h4 class="gallery__project-name animate__animated animate__heartBeat">VELAS AROMÁTICAS</h4>
+              </div>
+              <div class="gallery__project">
+                <h4 class="gallery__project-name animate__animated animate__heartBeat">AROMATIZANTES</h4>
+              </div>
+              <div class="gallery__project">
+                <h4 class="gallery__project-name animate__animated animate__heartBeat">JABÓN SOLIDO</h4>
+              </div>
+              <div class="gallery__project">
+                <h4 class="gallery__project-name animate__animated animate__heartBeat">test</h4>
+              </div>
+              <div class="gallery__project">
+                <h4 class="gallery__project-name animate__animated animate__heartBeat">test</h4>
               </div>
             </div>
-            <div class="contenido">
-                <p class="texto-Q20pink">
+          </div>
+        </section>
+            <div class="text__paragraph-items">
+                <p>
                     En Pekitas Ecotienda, creemos que la belleza y la sostenibilidad pueden ir de la mano.
                     Nuestros
                     productos están hechos con ingredientes naturales y vegetales, proporcionando una
@@ -114,13 +124,10 @@
                     verde y saludable.
                 </p>
             </div>
-        </section>
 </main>
     </div>
-   
     <!--Footer-->
     <footer>
         <p>© 2024 Pekitas Ecotienda</p>
     </footer>
-
 </html>
