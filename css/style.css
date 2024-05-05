@@ -406,7 +406,7 @@ nav {
       .gallery .gallery__project-container .gallery__project:nth-child(2) {
         background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/nosotros1.jpeg"); }
       .gallery .gallery__project-container .gallery__project:nth-child(3) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/cepillo.jpeg"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://asset.cloudinary.com/dpcpcnqmq/0413e577a7b9bd3ab807f89771810f23"); }
       .gallery .gallery__project-container .gallery__project:nth-child(4) {
         background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/index-3.jpeg"); }
       .gallery .gallery__project-container .gallery__project:nth-child(5) {
@@ -414,9 +414,9 @@ nav {
       .gallery .gallery__project-container .gallery__project:nth-child(6) {
         background-image: linear-gradient(#bb0374ad, #d0124848), url("../resorses/productos 4.jpeg"); }
       .gallery .gallery__project-container .gallery__project:nth-child(7) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("/resorses/back4.jpeg"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://asset.cloudinary.com/dpcpcnqmq/e725f8d727954e27d56e4019c0b65bbd"); }
       .gallery .gallery__project-container .gallery__project:nth-child(8) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("/resorses/back4.jpeg"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://asset.cloudinary.com/dpcpcnqmq/65e8aeca396be77e40f00f88cd449a58"); }
       .gallery .gallery__project-container .gallery__project:hover {
         opacity: 0.74;
         outline: 2px solid #fff6; }
