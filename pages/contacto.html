@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pekitas Ecotienda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -41,62 +42,74 @@
                 <input type="submit" value="">
             </form>
         </div>
-        <div class="banner-item"><h1>Inicio/Nuestros Productos<h1>
-          <h2 class="bienvenidos">Bienvenidos a Pekitas Ecotienda</h2>
-        </div>
-          <h3 class="titulo-banner">CONTACTANOS PARA UN CAMBIO NATURAL</h3>
-    </header>
-        <section class="section-contact">
-          <div class="container-main">
-          <main class="portada" id="portada">
-            <div class="portada__img-container">
-                <img src="../resorses/contacto2.jpg" class="portada__img">
-            </div>
-            <div class="portada__data-container">
-                <div class="portada-data">
-                    <div class="portada__description">
-                        <h4 class="titulo-contac">POR QUE CONTACTARNOS</h4>
-                        <p>Pekitas Ecotienda es una tienda que se especializa en productos ecológicos y sostenibles. Nuestro objetivo es ayudarte a hacer un cambio positivo para nuestro planeta ofreciéndote productos que son amigables con el medio ambiente.
-                        Nuestro equipo de atención al cliente está siempre listo y dispuesto a ayudarte con cualquier consulta o pedido que puedas tener. Puedes contactarnos a través de nuestras diversas redes sociales, donde estaremos encantados de ayudarte a seleccionar y adquirir nuestros productos. Nos esforzamos por proporcionarte la mejor experiencia de compra posible, asegurándonos de que todas tus preguntas sean respondidas y que encuentres exactamente lo que estás buscando.
-                         Aunque estamos ubicados en San Antonio de Padua, eso no limita nuestro alcance. Realizamos envíos a toda la República Argentina. Nos aseguramos de que nuestros productos lleguen a ti de manera segura y eficiente, sin importar en qué parte de Argentina te encuentres. Así, puedes disfrutar de nuestros productos ecológicos y sostenibles desde la comodidad de tu hogar.</p>
-                    </div>
-                </div>
-            </div>
-          </section>
-        </main>
 
-          <div class="form" id="contact">
-            <h5 class="form__title">CONTACT</h5>
-            <form class="form__form">
-              <div class="form__input-container">
-                <label>Nombre
-                  <input type="text" placeholder="Jhoon">
-                </label>
+          <!-- TITULO IDENTIFICADOR DE PAGINA -->
+          <h1 class="title__page-item">Contacto<h1>
+
+            <!-- TITULO BIENVENIDA DE PAGINA -->
+          
+          <h2 class="title__welcome-item">Bienvenidos a Pekitas Ecotienda</h2>
+
+
+        <!-- TITULO DE PAGINA -->
+          <h3 class="title__banner-item">REGISTRATE PARA UN CAMBIO NATURAL</h3>
+    </header>
+    <h3 class="titulo__item">GRACIAS POR CONFIAR EN PEKITAS ECOTIENDA!</h3>
+    <p class="text__paragraph-items">GRACIAS POR CONFIAR EN PEKITAS ECOTIENDA! PARA COORDINAR LOS RETIROS O EL ENVIO DE TUS PRODUCTOS POR FAVOR ESCRIBIR AL WHATSAPP O AL INSTAGRAM.</p>
+
+         <!---------------------------FORMULARIO CREADO CON TAILWIND CDN-------------------------------------------->
+
+      <section>
+        <div class="min-h-screen py-40" style="background-image: linear-gradient(115deg, #de18de9c)">
+          <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+              <div class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center" style="background-image: url('../resorses/jabon-natural1.jpeg');">
+                <h4 class="text-pink600- text-3xl mb-3" style="text-shadow: 3px 3px 4px rgba(225, 32, 116, 0.608);">Bienvenidos!!!</h4> <!-- Añade una sombra de texto blanca con una leve opacidad -->
+                <div>
+                  <p class="text-pink-800 font-bold py-2 px-6" style="text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.608);">Pekitas Ecotienda es una tienda que se especializa en productos ecológicos y sostenibles. Nuestro objetivo es ayudarte a hacer un cambio positivo para nuestro planeta ofreciéndote productos que son amigables con el medio ambiente.
+                    Nuestro equipo de atención al cliente está siempre listo y dispuesto a ayudarte con cualquier consulta o pedido que puedas tener. Puedes contactarnos a través de nuestras diversas redes sociales, donde estaremos encantados de ayudarte a seleccionar y adquirir nuestros productos. Nos esforzamos por proporcionarte la mejor experiencia de compra posible, asegurándonos de que todas tus preguntas sean respondidas y que encuentres exactamente lo que estás buscando.</a></p>
+                </div>
               </div>
-              <div class="form__input-container">
-                <label>Apellido
-                  <input type="text" placeholder="Snow">
-                </label>
+              <div class="w-full lg:w-1/2 py-16 px-12">
+                <h2  class="text-3xl text-pink-400 mb-4">Registrate</h2>
+                <p class="mb-4 text-pink-400">
+                  Crea tu cuenta. Es gratis y solo tomara un minuto!!!
+                </p>
+                <form action="#">
+                  <form class="bg-custom shadow-2xl rounded-full px-8 pt-6 pb-8 mb-4" style="box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);">
+                  <div class="grid grid-cols-2 gap-5">
+                    <input type="text" placeholder="Nombre" class="border border-gray-400 py-1 px-2">
+                    <input type="text" placeholder="Apellido" class="border border-gray-400 py-1 px-2">
+                  </div>
+                  <div class="mt-5">
+                    <input type="text" placeholder="Celular: (+54 11-2222-2222)" class="border border-gray-400 py-1 px-2 w-full">
+                  </div>
+                  <div class="mt-5">
+                    <input type="password" placeholder="E-mail" class="border border-gray-400 py-1 px-2 w-full">
+                  </div>
+                  <div class="mt-5">
+                    <input type="password" placeholder="dirección" class="border border-gray-400 py-1 px-2 w-full">
+                  </div>
+                  <div class="mt-5">
+                    <input type="checkbox" class="border border-gray-400">
+                    <span>
+                      Acepto los <a href="./terminos.de.uso.html" class="text-pink-400 font-semibold">Terminos de uso</a> &  <a href="./terminos.de.uso.html" class="text-pink-400 font-semibold">Privacy Policy</a> 
+                    </span>
+                  </div>
+                  <div class="mt-5">
+                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Envía tu mensaje" rows="4"></textarea> <!-- Cambia el texto del cuadro de texto para enviar un mensaje a "Envía tu mensaje" -->
+                  </div>
+                  <div class="mt-5">
+                    <button class="w-full bg-purple-500 py-3 text-center text-white">Contactanos!!!</button>
+                  </div>
+                </form>
               </div>
-              <div class="form__input-container">
-                <label>E-mail
-                  <input type="email" placeholder="JSnow@got.com.kl">
-                </label>
-              </div>
-              <div class="form__input-container">
-                <label>Mensaje
-                  <textarea placeholder="Deja tu mensaje"></textarea>
-                </label>
-              </div>
-              <div class="form__input-container">
-                <label>Mensaje
-                  <input type="submit">
-                </label>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
+      
+    </main>
                             <!--Footer-->
             <footer>
                       <p class="footer-text">© 2024 Pekitas Ecotienda</p>
