@@ -1,0 +1,108 @@
+/*-------------------- LOGO -----------------*/
+.imagen-con-fondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-image: linear-gradient(#ebead3, #cd1a6e33);
+
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      clip-path: circle(50%);
+    }
+  }
+
+/*-------------------- NAVBAR -----------------*/
+
+
+nav {
+  background-image: linear-gradient(#cd1a6e33, #ebead3);
+  box-shadow: 1px 0px 2px 0px #e727b733;
+  text-align: center; // Centra los elementos del navbar
+  .ul__list {
+    display: inline-block; // Hace que la lista sea en línea
+    margin: auto;
+    .ul__item {
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+      .ul__link {
+        color: #dd427e9c;
+        font-size: bolder;
+        font-family: "Cantarell", sans-serif;
+        text-decoration: none;
+        transition: padding 0.4s ease;
+  
+      }
+    }
+  }
+}
+.ul__link:hover {
+  background-color: #f10c8a1d;
+  border-radius: 35px;
+  padding: 8px;
+  transition: padding 0.4s ease;
+}
+
+/*-----------Barra de busqueda ----------*/
+.search-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 10px;
+
+  form {
+    display: flex;
+    align-items: center;
+
+    input[type="search"] {
+      margin-right: 10px;
+      border-radius: 15px;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+//*----------- Backround Animado
+.backround {
+  height: 100vh;
+  background: linear-gradient(35deg, #ebead3, #d42d976c, #d42d9715, #dd427e00);
+  background-size: 400% 400%;
+  animation: gradient 8s ease-in-out infinite;
+  max-width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  position: relative;
+  }
+
+  .backround::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: linear-gradient(35deg, rgba(235, 234, 211, 0.5), rgba(212, 45, 151, 0.4), rgba(212, 45, 151, 0.05), rgba(221, 66, 126, 0));
+    box-shadow: 0 0 15px 10px rgba(212, 45, 151, 0.3);
+    z-index: -1;
+  }
+
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      25% {
+          background-position: 25% 50%;
+      }
+      50% {
+          background-position: 75% 100%;
+      }
+      75% {
+          background-position: 0% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }

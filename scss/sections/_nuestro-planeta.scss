@@ -1,0 +1,158 @@
+/*----------------- NUESTRO PLANETA SECTIONS ---------------*/
+#profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.profile {
+  container-name: profile;
+  container-type: inline-size;
+  display: flex;
+  flex-flow: wrap;
+  justify-items: center;
+}
+
+.profile__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  max-width: 900px;
+}
+
+.profile__data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile__iframe-container {
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__iframe {
+  width: 100%;
+  height: auto;
+}
+
+
+.load-bar,
+.load-bar2 {
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.profile__info-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+.profile__info-container h2 {
+  color: #26a;
+}
+
+.profile__info-container h4 {
+  color: #2266aa85;
+  font-size: 20px;
+}
+
+.profile__info {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+  max-width: 600px;
+  margin-left: 0;
+  align-items: center;
+}
+
+.load-bar {
+  border: 2px solid #48e;
+  border-radius: 8px;
+  color: #fff;
+  padding: 2px;
+  font-size: 12px;
+  width: 80%;
+  margin: 4px;
+  margin-left: 0;
+  background-color: #ffffff80;
+}
+
+.profile__info-name {
+  color: #48e;
+}
+
+.load-bar__bar {
+  background-color: #48e;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.bar--71 {
+  width: 71%;
+}
+.bar--97 {
+  width: 90%;
+}
+.bar--10 {
+  width: 10%;
+}
+.bar--3 {
+  width: 3%;
+}
+
+.profile__info2 {
+  list-style: none;
+  display: flex;
+  margin: 12px;
+  max-width: 600px;
+  margin-left: 0;
+  align-items: center;
+}
+
+.load-bar2 {
+  border: 2px solid #33c333;
+  border-radius: 8px;
+  color: #fff;
+  padding: 2px;
+  font-size: 8px;
+  width: 60%;
+  margin: 2px;
+  margin-left: 0;
+  background-color: #ffffff80;
+}
+
+.load-bar__bar2 {
+  background-color: #278c27e4;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.bar--31 {
+  width: 31%;
+}
+
+.bar--6 {
+  width: 10%;
+}
+
+.bar--43 {
+  width: 43%;
+}
+
+.bar--75 {
+  width: 75%;
+}
+
+/*----------------- NUESTRO PLANETA SECTIONS ENDS---------------*/

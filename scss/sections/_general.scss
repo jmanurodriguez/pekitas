@@ -1,0 +1,319 @@
+/* Configuraciones generales */
+body {
+  background-color: #ebead3;
+  max-width: 100%;
+}
+
+main {
+  max-width: 100vw;
+  margin: auto;
+  width: 80%;
+}
+/*---------------- FUENTE PARRAFOS -------------------*/
+.text__paragraph-item {
+  p {
+    font-family: $font_title;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: justify;
+    color: #ac196e8e;
+    margin: auto;
+    padding: 20px;
+  }
+}
+.text__paragraph-items {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: justify;
+  color: #ac196e8e;
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.planeta {
+  display: flex;
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  color: #ac196e8e;
+  margin: 20px 0;
+  font-weight: bold;
+  column-count: 2;
+  column-gap: 20px;
+  text-align: justify;
+}
+
+
+h1 {
+  color: #ac196e8e;
+  font-size: 20px;
+  font-family: $font_paragraph;
+}
+main h2 {
+  font-family: $font_paragraph;
+}
+.contenedor-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*---------------Style Titles---------------*/
+.title__page-item {
+  color: #ac196e8e;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: $font_title;
+  text-align: start;
+}
+.titulo__item {
+  font-family: $font_title;
+  font-size: 20px;
+  color: #dd427d6e;
+  font-weight: 600;
+  text-align: center;
+}
+.titulo__item:hover {
+  font-family: $font_title;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #e40e6093;
+  font-weight: 600;
+  text-align: center;
+  background-size: 200% 200%;
+  animation: alternate;
+}
+
+.title__welcome-item {
+  font-family: $font_title;
+  font-size: 20px;
+  color: #dd427d6e;
+  font-weight: 600;
+  text-align: start;
+  
+}
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header {
+  h3.title__banner-item {
+    font-size: 30px;
+    color: #dd427e93;
+    font-weight: 600;
+    font-family: $font_title;
+    background-image: linear-gradient(#d42d976c, #cd1a6e2a);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    box-shadow: 0px 8px 16px 0px #e727b733;
+    margin-bottom: 80px;
+    text-align: center;
+    transition: padding 0.5s ease;
+  }
+}
+h3.title__banner-item:hover {
+  background: -o-linear-gradient (35deg, rgba(235, 234, 211, 0.5), rgba(212, 45, 151, 0.4), rgba(212, 45, 151, 0.05), rgba(221, 66, 126, 0));
+  padding: 8px;
+  width: .1;
+}
+
+
+/* --------------NEON BUTTON---------------- */
+
+.eco .wrapper .button-container {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.button-container:has(.btn-3) {
+    filter: drop-shadow(0px 0px 20px #da2f84d0)
+    drop-shadow(0px 0px 20px #da2f84d0);
+    margin-top: 20px;
+}
+
+.btn-3 {
+    color: #c00c60a2;
+    background: transparent;
+    font-family: $font_paragraph;
+    font-size: 20px;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 12px;
+    width: 100%;
+    
+}
+
+.btn-3:hover {
+    animation: parpadear 1s infinite alternate backwards;
+    background-color: #ca32a406;
+}
+
+.btn-3:before {
+    content: "";
+    background-color: #da2f84d0;
+    display: block;
+    height: 1px;
+    width: 20%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    top: -16px;
+    transition: top.6s, opacity .6s, width .2s;
+    animation: parpadear-linea 1s infinite alternate backwards;
+    border: none;
+
+}
+
+.btn-3:hover:before {
+    top: -5px;
+    opacity: 1;
+    width: 80%;
+}
+
+.btn-3:after {
+    content: "";
+    background-color: #da2f84d0;
+    display: block;
+    height: 1px;
+    width: 10%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: 2px;
+    opacity: 0;
+    top: -10px;
+    transition: top.6s, opacity .6s, width .6s;
+    animation: parpadear-linea 1s infinite alternate-reverse backwards;
+    border: none;
+
+}
+
+.btn-3:hover:after {
+    top: -9px;
+    opacity: 1;
+    width: 50%;
+
+}
+
+@keyframes parpadear {
+    0% {
+        color: #fff3;
+        border: 1px solid #fff;
+        box-shadow: none;
+        text-shadow: none;
+        border: none;
+    }
+
+    25%{
+        border-color: #da2f84d0;
+        color:#d60ba3;
+        box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px#da2f8533 ;
+        text-shadow: 0px 0px 9px #da2f8533, 0px 0px 3px #da2f8555;
+        border: none;
+    }
+    30% {
+        color: #fff3;
+        border: 1px solid #fff;
+        box-shadow: none;
+        text-shadow: none;
+        border: none;
+    }
+
+    35%{
+        color: #da2f84d0;
+        text-shadow: 0px 0px 9px #da2f8533, 0px 0px 3px #da2f8568;
+        border: none;
+    }
+    46% {
+        color: #fff3;
+        border: 1px solid #fff;
+        box-shadow: none;
+        text-shadow: none;
+        border: none;
+    }
+
+    60%{
+        border-color: #da2f84d0;
+        box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px#da2f8533 ;
+        border: none;
+    }
+
+        78% {
+        color: #fff3;
+        border: 1px solid #fff;
+        box-shadow: none;
+        text-shadow: none;
+        border: none;
+    }
+
+    100%{
+        color:#da2f84d0;
+        text-shadow: 0px 0px 9px #da2f8533, 0px 0px 3px #da2f856c;
+        border: none;
+    }
+
+}
+
+@keyframes parpadear-linea {
+    0% {
+    background-color: #da2f84d0;
+    box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px #da2f8533;
+    border: none;
+    }
+
+    25%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+    30% {
+        background-color: #da2f84d0;
+        box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px #da2f8533;
+        border: none;
+    }
+
+    35%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+    46% {
+        background-color: #da2f84d0;
+        box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px #da2f8533;
+        border: none;
+    }
+
+    60%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+
+        78% {
+            background-color: #da2f84d0;
+            box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px #da2f8533;
+            border: none;
+    }
+
+    100%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+}
+
+@media (prefers-reduce-motion) {
+    .btn .btn:before, .btn::after {
+        animation: none;
+    }
+}
+
+
+.bg-custom {
+  background-color: 2px 2px 4px #0003;
+}

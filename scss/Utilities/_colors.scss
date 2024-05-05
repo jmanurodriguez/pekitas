@@ -1,0 +1,40 @@
+//------------- Paleta de Colores
+//------------Colores Para Titulos
+$color-pages: #ac196e8e;
+$color-welcome: #dd427d6e;
+$color-title: #dd427e93;
+
+//------------Colores Para Parrafos
+$color-paragraph: #ac196f;
+
+//------------ Colores Para el Footer
+$color-footer: #ba1583a6;
+
+//------------ Colores Para el Bacround del Body
+
+$color-backround_body: #ebead3;
+
+//------------ Colores Para el Bacround del Logo
+
+$backround-banner_logo: linear-gradient(#ebead3, #cd1a6e33);
+
+//------------ Colores Para el Bacround del Nav
+
+$backround-banner_nav: linear-gradient(#cd1a6e33, #ebead3);
+$shadow-nav: #e727b733;
+$color-link: #dd427e9c;
+$color-link_hover: #f10c8a13;
+
+//------------ Colores Para la Barra de Busqueda
+
+$color-search: #f2f2f2;
+
+//------------ Colores Para Galeria Index
+
+$color-gallery: #fff;
+$backround-gallery: linear-gradient(
+  0px 0px 10px 10px solid (#ebead3, #cd1a6e43)
+);
+$backround-gallery_item: linear-gradient(#bb0374ad, #d0124848);
+$backround-gallery_img: linear-gradient(#bb0374ad, #d0124848);
+$color-gallery_hover: #fff6;

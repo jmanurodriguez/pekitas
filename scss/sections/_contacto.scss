@@ -1,0 +1,107 @@
+/*----------------- CONTACT SECTIONS ---------------*/
+#portada {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.portada {
+  container-name: portada;
+  container-type: inline-size;
+  display: flex;
+  flex-flow: wrap;
+  justify-items: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    max-width: 800px;
+  }
+
+  &__data-container {
+    display: flex;
+    max-width: 600px;
+    max-height: 600px;
+  }
+
+  &__img-container {
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  &__img {
+    max-width: 600px;
+    max-height: 600px;
+    width: 420px;
+    height: 400px;
+  }
+}
+
+h4 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.paragraph-contact {
+  color: $color-paragraph;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+}
+.form {
+  min-height: 60dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  container-name: form;
+  container-type: inline-size;
+
+  &__form {
+    padding: 12px;
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+    margin-bottom: 4px;
+  }
+
+  &__input-container {
+    :is(input, textarea) {
+      width: 100%;
+      padding: 9px;
+      font-size: 16px;
+      margin: 4px;
+      border: none;
+      box-shadow: 2px 2px 4px #0003;
+      background-color: #fffd;
+      cursor: pointer;
+    }
+
+    textarea {
+      resize: none;
+      min-height: 120px;
+      font-family: inherit;
+    }
+
+    input[type="submit"] {
+      padding: 12px;
+      background-color: #48e;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    color: white;
+    color: #2266aa85;
+    padding: 20px;
+    margin: 20px;
+  }
+}
+/*----------------- CONTACT SECTIONS ENDS ---------------*/

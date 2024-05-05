@@ -1,0 +1,97 @@
+/*---------------- INDEX ------------------*/
+.deco {
+  text-decoration: none;
+  color: #fffd;
+}
+
+.gallery {
+  background-image: linear-gradient(
+    0px 0px 10px 10px solid (#ebead3, #cd1a6e43)
+  );
+  font-family: "Cantarell", sans-serif;
+  color: #fff;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  container-name: gallery;
+  container-type: inline-size;
+  justify-content: space-evenly;
+  
+
+  .gallery__title {
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: #da2f84d0;
+  }
+
+  .gallery__project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    min-height: 80dvh;
+    
+
+
+    .gallery__project {
+      background-image: linear-gradient(#bb0374ad, #d0124848),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhDIr8sOGkc9CIPSc51moa9fUK4wsoDrk1M-nltJqTQ&s");
+      background-position: center;
+      background-size: cover;
+      display: grid;
+      place-content: center;
+      border-radius: 8px;
+      transition: .4s ease-in;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        background-image: linear-gradient(#bb0374ad, #d0124848),
+          url("../resorses/index-2.jpeg"); 
+      }
+
+      &:nth-child(2) {
+        background-image: linear-gradient(#bb0374ad, #d0124848),
+          url("../resorses/nosotros1.jpeg");
+      }
+
+      &:nth-child(3) {
+        background-image: linear-gradient(#bb0374ad, #d0124848),
+          url("../resorses/cepillo.jpeg");
+      }
+
+      &:nth-child(4) {
+        background-image: linear-gradient(#bb0374ad, #d0124848),
+          url("../resorses/index-3.jpeg");
+      }
+
+      &:nth-child(5) {
+        background-image: linear-gradient(#bb0374ad, #d0124848),
+          url("../resorses/index-1.jpeg");
+      }
+
+      &:nth-child(6) {
+        background-image: linear-gradient(#bb0374ad, #d0124848),
+          url("../resorses/productos\ 4.jpeg");
+      }
+      &:nth-child(7) {
+        background-image: linear-gradient(#bb0374ad, #d0124848),
+          url("/resorses/back4.jpeg");
+      }
+      &:nth-child(8) {
+        background-image: linear-gradient(#bb0374ad, #d0124848),
+          url("/resorses/back4.jpeg");
+      }
+
+      &:hover {
+        opacity: 0.74;
+        outline: 2px solid #fff6;
+      }
+    }
+  }
+}
+
+/*----------------- INDEX ENDS ---------------*/
