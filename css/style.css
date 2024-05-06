@@ -534,6 +534,12 @@ nav {
   align-items: center;
   justify-content: space-between; }
 
+.item__img {
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 20px 12px 12px 0 solid #cd289655; }
+
 .profile__iframe-container {
   max-height: 500px;
   overflow: hidden;
@@ -542,8 +548,9 @@ nav {
   align-items: center; }
 
 .profile__iframe {
-  width: 100%;
-  height: auto; }
+  width: 80%;
+  height: auto;
+  border-radius: 25px; }
 
 .load-bar,
 .load-bar2 {
