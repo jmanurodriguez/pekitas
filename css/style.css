@@ -58,7 +58,8 @@ main {
 h1 {
   color: #ac196e8e;
   font-size: 20px;
-  font-family: "Cantarell", sans-serif; }
+  font-family: "Cantarell", sans-serif;
+  margin: 0; }
 
 main h2 {
   font-family: "Cantarell", sans-serif; }
@@ -74,7 +75,8 @@ main h2 {
   font-weight: bolder;
   font-size: 20px;
   font-family: "Questrial", sans-serif;
-  text-align: start; }
+  text-align: start;
+  margin: 0; }
 
 .titulo__item {
   font-family: "Questrial", sans-serif;
@@ -98,7 +100,12 @@ main h2 {
   font-size: 20px;
   color: #dd427d6e;
   font-weight: 600;
-  text-align: start; }
+  text-align: start;
+  margin: 0;
+  padding: 0; }
+
+.title__page-item, .title__welcome-item {
+  margin-left: 20px; }
 
 @keyframes gradient {
   0% {
@@ -561,9 +568,6 @@ nav {
   display: flex;
   flex-direction: column;
   width: 800px; }
-
-.profile__info-container h2 {
-  color: #26a; }
 
 .profile__info-container h4 {
   color: #2266aa85;

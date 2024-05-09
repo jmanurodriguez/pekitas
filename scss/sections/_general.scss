@@ -50,6 +50,7 @@ h1 {
   color: #ac196e8e;
   font-size: 20px;
   font-family: $font_paragraph;
+  margin: 0;
 }
 main h2 {
   font-family: $font_paragraph;
@@ -67,6 +68,7 @@ main h2 {
   font-size: 20px;
   font-family: $font_title;
   text-align: start;
+  margin: 0;
 }
 .titulo__item {
   font-family: $font_title;
@@ -92,8 +94,14 @@ main h2 {
   color: #dd427d6e;
   font-weight: 600;
   text-align: start;
-  
+  margin: 0;
+  padding: 0;
 }
+
+.title__page-item, .title__welcome-item {
+  margin-left: 20px;
+}
+
 @keyframes gradient {
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
