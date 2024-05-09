@@ -67,7 +67,7 @@ main h2 {
 
 /*---------------Style Titles---------------*/
 .title__page-item {
-  color: #ac196e8e;
+  color: $color-pages;
   font-weight: bolder;
   font-size: 20px;
   font-family: $font_title;
@@ -77,7 +77,7 @@ main h2 {
 .titulo__item {
   font-family: $font_title;
   font-size: 20px;
-  color: #dd427d6e;
+  color: $color-welcome;
   font-weight: 600;
   text-align: center;
 }
@@ -85,7 +85,7 @@ main h2 {
   font-family: $font_title;
   font-size: 20px;
   font-weight: bolder;
-  color: #e40e6093;
+  color: $color-title;
   font-weight: 600;
   text-align: center;
   background-size: 200% 200%;
@@ -114,20 +114,20 @@ main h2 {
 header {
   h3.title__banner-item {
     font-size: 30px;
-    color: #dd427e93;
+    color: $color-title;
     font-weight: 600;
     font-family: $font_title;
     background-image: linear-gradient(#d42d976c, #cd1a6e2a);
     background-size: 200% 200%;
     animation: gradient 3s ease infinite;
-    box-shadow: 0px 8px 16px 0px #e727b733;
+    box-shadow: 0px 8px 16px 0px $shadow-nav;
     margin-bottom: 80px;
     text-align: center;
     transition: padding 0.5s ease;
   }
 }
 h3.title__banner-item:hover {
-  background: -o-linear-gradient (35deg, rgba(235, 234, 211, 0.5), rgba(212, 45, 151, 0.4), rgba(212, 45, 151, 0.05), rgba(221, 66, 126, 0));
+  background: -o-linear-gradient (35deg, #ebead380, #d42d9766, #d42d970d, #dd427e00);
   padding: 8px;
   width: .1;
 }
@@ -142,8 +142,8 @@ h3.title__banner-item:hover {
 }
 
 .button-container:has(.btn-3) {
-    filter: drop-shadow(0px 0px 20px #da2f84d0)
-    drop-shadow(0px 0px 20px #da2f84d0);
+    filter: drop-shadow(0px 0px 20px $btn-color)
+    drop-shadow(0px 0px 20px $btn-color);
     margin-top: 20px;
 }
 
@@ -166,7 +166,7 @@ h3.title__banner-item:hover {
 
 .btn-3:before {
     content: "";
-    background-color: #da2f84d0;
+    background-color: $btn-color;
     display: block;
     height: 1px;
     width: 20%;
@@ -191,7 +191,7 @@ h3.title__banner-item:hover {
 
 .btn-3:after {
     content: "";
-    background-color: #da2f84d0;
+    background-color: $btn-color;
     display: block;
     height: 1px;
     width: 10%;
@@ -225,7 +225,7 @@ h3.title__banner-item:hover {
     }
 
     25%{
-        border-color: #da2f84d0;
+        border-color: $btn-color;
         color:#d60ba3;
         box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px#da2f8533 ;
         text-shadow: 0px 0px 9px #da2f8533, 0px 0px 3px #da2f8555;
@@ -234,13 +234,12 @@ h3.title__banner-item:hover {
     30% {
         color: #fff3;
         border: 1px solid #fff;
-        box-shadow: none;
         text-shadow: none;
         border: none;
     }
 
     35%{
-        color: #da2f84d0;
+        color: $btn-color;
         text-shadow: 0px 0px 9px #da2f8533, 0px 0px 3px #da2f8568;
         border: none;
     }
@@ -253,7 +252,7 @@ h3.title__banner-item:hover {
     }
 
     60%{
-        border-color: #da2f84d0;
+        border-color: $btn-color;
         box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px#da2f8533 ;
         border: none;
     }
@@ -261,13 +260,12 @@ h3.title__banner-item:hover {
         78% {
         color: #fff3;
         border: 1px solid #fff;
-        box-shadow: none;
         text-shadow: none;
         border: none;
     }
 
     100%{
-        color:#da2f84d0;
+        color:$btn-color;
         text-shadow: 0px 0px 9px #da2f8533, 0px 0px 3px #da2f856c;
         border: none;
     }
@@ -276,7 +274,7 @@ h3.title__banner-item:hover {
 
 @keyframes parpadear-linea {
     0% {
-    background-color: #da2f84d0;
+    background-color: $btn-color;
     box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px #da2f8533;
     border: none;
     }
@@ -286,7 +284,7 @@ h3.title__banner-item:hover {
         box-shadow: none;
     }
     30% {
-        background-color: #da2f84d0;
+        background-color: $btn-color;
         box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px #da2f8533;
         border: none;
     }
@@ -296,7 +294,7 @@ h3.title__banner-item:hover {
         box-shadow: none;
     }
     46% {
-        background-color: #da2f84d0;
+        background-color: $btn-color;
         box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px #da2f8533;
         border: none;
     }
@@ -307,7 +305,7 @@ h3.title__banner-item:hover {
     }
 
         78% {
-            background-color: #da2f84d0;
+            background-color: $btn-color;
             box-shadow: 0px 0px 6px#da2f8533,  0px 0px 16px #da2f8533;
             border: none;
     }

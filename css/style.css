@@ -93,7 +93,7 @@ main h2 {
   font-family: "Questrial", sans-serif;
   font-size: 20px;
   font-weight: bolder;
-  color: #e40e6093;
+  color: #dd427e93;
   font-weight: 600;
   text-align: center;
   background-size: 200% 200%;
@@ -131,7 +131,7 @@ header h3.title__banner-item {
   transition: padding 0.5s ease; }
 
 h3.title__banner-item:hover {
-  background: -o-linear-gradient 35deg, rgba(235, 234, 211, 0.5), rgba(212, 45, 151, 0.4), rgba(212, 45, 151, 0.05), rgba(221, 66, 126, 0);
+  background: -o-linear-gradient 35deg, #ebead380, #d42d9766, #d42d970d, #dd427e00;
   padding: 8px;
   width: .1; }
 
@@ -219,7 +219,6 @@ h3.title__banner-item:hover {
   30% {
     color: #fff3;
     border: 1px solid #fff;
-    box-shadow: none;
     text-shadow: none;
     border: none; }
   35% {
@@ -239,7 +238,6 @@ h3.title__banner-item:hover {
   78% {
     color: #fff3;
     border: 1px solid #fff;
-    box-shadow: none;
     text-shadow: none;
     border: none; }
   100% {
