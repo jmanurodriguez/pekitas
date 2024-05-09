@@ -887,4 +887,16 @@ nav li {
   .profile__info-container {
     width: 800px; } }
 
+/* Estilo para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  .item__img {
+    width: 70%;
+    height: auto; } }
+
+@media screen and (max-width: 600px) {
+  .text__paragraph-items {
+    font-size: medium; }
+  .planeta {
+    font-size: medium; } }
+
 /* ----------------- NUESTRO PLANETA QUERIES ENDS ----------------- */
