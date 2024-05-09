@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  background-image: linear-gradient(#ebead3, #cd1a6e33);
+  background-image: $backround-banner_logo;
 
     img {
       display: inline-block;
@@ -18,8 +18,8 @@
 
 
 nav {
-  background-image: linear-gradient(#cd1a6e33, #ebead3);
-  box-shadow: 1px 0px 2px 0px #e727b733;
+  background-image: $backround-banner_nav;
+  box-shadow: 1px 0px 2px 0px $shadow-nav;
   text-align: center; // Centra los elementos del navbar
   .ul__list {
     display: inline-block; // Hace que la lista sea en línea
@@ -29,7 +29,7 @@ nav {
       text-align: center;
       margin: 0;
       .ul__link {
-        color: #dd427e9c;
+        color: $color-link;
         font-size: bolder;
         font-family: "Cantarell", sans-serif;
         text-decoration: none;
@@ -63,7 +63,7 @@ nav {
       border: none;
       padding: 10px;
       font-size: 16px;
-      background-color: #f2f2f2;
+      background-color: $color-search;
     }
   }
 }
