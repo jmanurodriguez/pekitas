@@ -4,6 +4,10 @@ body {
   max-width: 100%;
 }
 
+h1, h2, h3, h4, h5, h5 {
+  margin: 0;
+  padding: 0;
+}
 main {
   max-width: 100vw;
   margin: auto;
@@ -94,12 +98,11 @@ main h2 {
   color: #dd427d6e;
   font-weight: 600;
   text-align: start;
-  margin: 0;
-  padding: 0;
 }
 
 .title__page-item, .title__welcome-item {
-  margin-left: 20px;
+  margin-left: 20px ;
+  
 }
 
 @keyframes gradient {
