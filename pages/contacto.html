@@ -10,6 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     </style>
     <link rel="shortcut icon" href="../resorses/pekitas-logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
@@ -26,24 +28,83 @@
 
         <!-- Menu de Navegación -->
 
-        <nav class="navegacion">
-          <ul class="ul__list">
-              <li class="ul__item"><a href="../index.html" class="ul__link">Inicio</a></li>
-              <li class="ul__item"><a href="./nuestros-productos.html" class="ul__link">Nuestros Productos</a></li>
-              <li class="ul__item"><a href="./nosotros.html"class="ul__link">Nosotros</a></li>
-              <li class="ul__item"><a href="./nuestro-planeta.html" class="ul__link">Nuestro Planeta</a></li>
-              <li class="ul__item"><a href="./contacto.html" class="ul__link">Contacto</a></li>
-          </ul>
-      </nav>
-
-            <!-- Barra de busqueda -->
+        <!-- Menu de Navegación -->
+        <!-- Inicio del menu -->
+    
+        <nav class="navbar navbar-expand-md navbar-dark bg-custom">
+          <div class="container-fluid">
+            <!-- boton del menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- elementos del menu colapsable -->
+            <div class="collapse navbar-collapse ul__list" id="menu">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item ul__item">
+                  <a class="nav-link ul__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item ul__item">
+                  <a class="nav-link ul__link" href="./nuestros-productos.html">Nuestros Productos</a>
+                </li>
+                <li class="nav-item ul__item">
+                  <a class="nav-link ul__link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item ul__item">
+                  <a class="nav-link ul__link" href="./nuestro-planeta.html">Nuestro Planeta</a>
+                </li>
+                <li class="nav-item ul__item">
+                  <a class="nav-link ul__link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <hr class="d-md-none text-white-50">
+      
+              <!-- enlaces redes sociales -->
+    
+              <ul class="navbar-nav  flex-row flex-wrap text-light">
+                <li class="nav-item col-6 col-md-auto p-3">
+                  <a href="#" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                    <small class="d-md-none ms-2">Twitter</small>
+                  </a>
+                </li>
+              
+                <li class="nav-item col-6 col-md-auto p-3">
+                  <a href="#" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                    <small class="d-md-none ms-2">Instagram</small>
+                  </a>
+                </li>
+              
+                <li class="nav-item col-6 col-md-auto p-3">
+                  <a href="#" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                    <small class="d-md-none ms-2">WhatsApp</small>
+                  </a>
+                </li>
+              
+                <li class="nav-item col-6 col-md-auto p-3">
+                  <a href="#" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                    <small class="d-md-none ms-2">Facebook</small>
+                  </a>
+                </li>
+              </ul>
+             
+        <!-- Barra de busqueda -->
+             <form class="d-flex">
+              <button class="btn btn-custom d-none d-md-inline-block" type="submit">Información</button>
+             </form>
+              <div class="search-container">
+                <form action="/ruta_de_busqueda" method="get">
+                    <input type="search" name="q" placeholder="Buscar...">
+                    <input type="submit" value="enviar">
+                </form>
+            </div>
+            </div>
+          </div>
         </nav>
-        <div class="search-container">
-            <form action="/ruta_de_busqueda" method="get">
-                <input type="search" name="q" placeholder="Buscar...">
-                <input type="submit" value="enviar">
-            </form>
-        </div>
+        <!-------------  NAV ENDS ------------>
 
           <!-- TITULO IDENTIFICADOR DE PAGINA -->
           <h1 class="title__page-item">Contacto<h1>
@@ -57,7 +118,16 @@
           <h3 class="title__banner-item">REGISTRATE PARA UN CAMBIO NATURAL</h3>
     </header>
     <h3 class="titulo__item">GRACIAS POR CONFIAR EN PEKITAS ECOTIENDA!</h3>
-    <p class="text__paragraph-items">GRACIAS POR CONFIAR EN PEKITAS ECOTIENDA! PARA COORDINAR LOS RETIROS O EL ENVIO DE TUS PRODUCTOS POR FAVOR ESCRIBIR AL WHATSAPP O AL INSTAGRAM.</p>
+    <p class="text__paragraph-items">GRACIAS POR CONFIAR EN PEKITAS ECOTIENDA! PARA COORDINAR LOS RETIROS O EL ENVIO DE TUS PRODUCTOS POR FAVOR ESCRIBIRNOS POR WHATSAPP, INSTAGRAM O FACEBOOK.</p>
+
+    <div class="redes_item">
+      <h3 class="titulo__item">NUESTRAS REDES SOCIALES</h3>
+      <div class="red__item">
+          <a href="#" class="fa fa-facebook" style="color: #74C0FC;"></a>
+          <a href="#" class="fa fa-instagram" style="color: rgb(255, 67, 34);"></a>
+          <a href="#" class="fa fa-whatsapp" style="color: #0edc2a;"></a>
+      </div>
+  </div>
 
          <!---------------------------FORMULARIO CREADO CON TAILWIND CDN-------------------------------------------->
          <section>
@@ -72,9 +142,9 @@
                   </div>
                 </div>
                 <div class="w-full sm:w-1/2 py-16 px-12">
-                  <h4  class="text-3xl text-pink-400 mb-4 sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl">Registrate</h4>
+                  <h4  class="text-3xl text-pink-400 mb-4 sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl">Envianos tu consulta</h4>
                   <p class="mb-4 text-pink-400">
-                    Crea tu cuenta. Es gratis y solo tomara un minuto!!!
+                    Consulta por mas productos. Es gratis y solo tomara un minuto!!!
                   </p>
                   <form action="#">
                     <form class="bg-custom shadow-2xl rounded-full px-8 pt-6 pb-8 mb-4" style="box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);">
@@ -135,5 +205,6 @@
     </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
 
