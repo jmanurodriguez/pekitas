@@ -53,25 +53,45 @@ nav {
 
 /*-----------Barra de busqueda ----------*/
 .search-container {
-  position: fixed;
-  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: self-start;
   top: 0;
   padding: 10px;
 
   form {
     display: flex;
     align-items: center;
-
-    input[type="search"] {
-      margin-right: 10px;
-      border-radius: 15px;
-      border: none;
-      padding: 10px;
-      font-size: 16px;
-      background-color: $color-search;
-    }
   }
+
+  input[type="search"] {
+    margin-right: 10px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: $color-search;
+  }
+
+  input[type="submit"] {
+    color: #fff; 
+    background-color: #da2f8564; 
+    border: none;
+    border-radius: 23px;
+    padding: 5px 10px;
+    font-size: 16px; 
+    cursor: pointer;
+    box-shadow: 0px 4px 8px 0px #00000033;
+    transition: all 0.3s ease; 
 }
+
+input[type="submit"]:hover {
+    background-color: #f9c2db9e; /* Relleno rosa más claro al pasar el mouse */
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3); /* Sombra más grande al pasar el mouse */
+  }
+  }
+
+
 
 //*----------- Backround Animado
 .backround {
