@@ -760,16 +760,6 @@ h4 {
   text-decoration: none;
   color: #fff; }
 
-@media screen and (max-width: 800px) {
-  .pie-pagina .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-    animation: fadeIn 2s ease-in-out; }
-  .pie-pagina .grupo-1 .box figure img {
-    width: 100px; } }
-
 /*---------------- NAV QUERIES ----------- */
 /* Estilos para móviles */
 @media only screen and (max-width: 480px) {
@@ -999,3 +989,12 @@ nav li {
     font-size: medium; } }
 
 /* ----------------- NUESTRO PLANETA QUERIES ENDS ----------------- */
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+    animation: fadeIn 2s ease-in-out; }
+  .pie-pagina .grupo-1 .box figure img {
+    width: 100px; } }
