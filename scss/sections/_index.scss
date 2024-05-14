@@ -35,7 +35,9 @@
     padding: 12px;
     min-height: 80dvh;
     
-
+    .gallery__project a {
+      text-decoration: none;
+    }
 
     .gallery__project {
       background-image: linear-gradient(#bb0374ad, #d0124848),
@@ -47,6 +49,7 @@
       border-radius: 8px;
       transition: .4s ease-in;
       cursor: pointer;
+
 
       &:nth-child(1) {
         background-image: linear-gradient(#bb0374ad, #d0124848),

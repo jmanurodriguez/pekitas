@@ -430,6 +430,8 @@ nav {
     gap: 12px;
     padding: 12px;
     min-height: 80dvh; }
+    .gallery .gallery__project-container .gallery__project a {
+      text-decoration: none; }
     .gallery .gallery__project-container .gallery__project {
       background-image: linear-gradient(#bb0374ad, #d0124848), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhDIr8sOGkc9CIPSc51moa9fUK4wsoDrk1M-nltJqTQ&s");
       background-position: center;
