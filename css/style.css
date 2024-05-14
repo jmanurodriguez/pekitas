@@ -309,12 +309,15 @@ nav {
       margin: 0; }
       nav .ul__list .ul__item .ul__link {
         color: #dd427e9c;
-        font-size: bolder;
+        font-size: 16px;
+        /* Ajusta este valor según tus necesidades */
+        font-weight: bolder;
         font-family: "Cantarell", sans-serif;
         text-decoration: none;
         transition: padding 0.4s ease; }
 
-.ul__link:hover {
+.ul__link:hover,
+.ul__link:focus {
   background-color: #f10c8a1d;
   border-radius: 35px;
   padding: 8px;
@@ -656,24 +659,100 @@ h4 {
   text-align: center; }
 
 /*----------------- CONTACT SECTIONS ENDS ---------------*/
-footer p {
-  font-family: "Cantarell", sans-serif;
-  font-size: 20px;
-  font-weight: bolder;
-  color: #ba1583a6;
-  position: absolute;
-  text-align: center;
-  background-image: linear-gradient(#d42d976c, #cd1a6e2a);
-  box-shadow: 0px 8px 16px 0px rgba(231, 39, 183, 0.2);
-  padding: 20px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.pie-pagina {
   width: 100%;
-  max-width: 100%;
-  height: 100px;
+  background-image: linear-gradient(#d42d97e2, #cd1a6e2a);
+  box-shadow: 0px 8px 16px 0px #e727b733;
+  animation: fadeIn 2s ease-in-out; }
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  animation: fadeIn 2s ease-in-out; }
+
+.pie-pagina .grupo-1 .box {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 50px;
+  display: flex;
   justify-content: center;
-  padding: 20px;
-  margin: 0; }
+  align-items: center;
+  animation: fadeIn 2s ease-in-out; }
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 150px;
+  box-shadow: 0px 0px .8px .8px #ffffff2c;
+  border-radius: 50%;
+  filter: brightness(150%) contrast(150%);
+  left: auto;
+  animation: fadeIn 2s ease-in-out; }
+
+.pie-pagina .grupo-1 .box h6 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  animation: fadeIn 2s ease-in-out; }
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out; }
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #cd1a6eb2;
+  text-align: center;
+  transition: all 300ms ease;
+  animation: fadeIn 2s ease-in-out; }
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua; }
+
+.pie-pagina .grupo-2 {
+  background-color: #d42d976c;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out; }
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px; }
+
+.pie-pagina .grupo-2 a {
+  text-decoration: none;
+  color: #fff; }
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+    animation: fadeIn 2s ease-in-out; }
+  .pie-pagina .grupo-1 .box figure img {
+    width: 100px; } }
 
 /*---------------- NAV QUERIES ----------- */
 /* Estilos para móviles */
