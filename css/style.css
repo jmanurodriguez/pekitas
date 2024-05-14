@@ -688,6 +688,14 @@ h4 {
   font-size: 25px;
   text-align: center; }
 
+.fa {
+  text-decoration: none;
+  /* Elimina el subrayado de los iconos */ }
+
+.redes_item {
+  margin-bottom: 80px;
+  /* Agrega un espacio debajo de los iconos */ }
+
 .red__item {
   margin-top: 30px;
   display: flex;
