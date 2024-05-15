@@ -99,10 +99,13 @@ main h2 {
   font-weight: 600;
   text-align: start;
 }
-
+.container__titles {
+  background: #ebead3;
+  border: transparent;
+  overflow: hidden;
+}
 .title__page-item, .title__welcome-item {
   margin-left: 20px ;
-  
 }
 
 @keyframes gradient {
@@ -113,6 +116,8 @@ main h2 {
 
 header {
   h3.title__banner-item {
+    margin-top: 10px;
+    padding: 7px 7px;
     font-size: 30px;
     color: $color-title;
     font-weight: 600;
