@@ -62,5 +62,15 @@
 
     }
   }
-
+/*-----------------  Animación para los Productos ---------------*/
+  .animated-image {
+    animation: fade 3s;
+  }
+  @keyframes fade {
+    0% {opacity: 1;}
+    0% {opacity: 0.5;}
+    50% {opacity: 0.2;}
+    0% {opacity: 2;}
+    100% {opacity: 1;}
+  }
 /*----------------- NUESTROS PRODUCTOS ENDS ---------------*/
