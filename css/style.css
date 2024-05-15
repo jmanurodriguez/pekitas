@@ -122,7 +122,7 @@ main h2 {
   100% {
     background-position: 0% 50%; } }
 
-header h3.title__banner-item {
+h3.title__banner-item {
   margin-top: 10px;
   padding: 7px 7px;
   font-size: 30px;
@@ -301,9 +301,11 @@ h3.title__banner-item:hover {
     margin-top: 40px;
     width: 80%;
     height: 80%;
+    width: 80%;
+    height: 80%;
+    border: solid 1px #ffffff32;
+    box-shadow: 0px 0px 1px 1px #ffffff21;
     transform: translateY(-20px);
-    border: solid 1px 1px 1px #ffffff59;
-    box-shadow: 0px 0px .8px .8px #ffffff59;
     border-radius: 50%;
     filter: brightness(150%) contrast(150%);
     left: auto;
@@ -826,6 +828,26 @@ h4 {
   .redondo {
     width: 200px;
     height: 200px; } }
+
+@media only screen and (max-width: 480px) {
+  .imagen-con-fondo img {
+    width: 70%;
+    height: 70%; } }
+
+@media (min-width: 500px) and (max-width: 1024px) {
+  .imagen-con-fondo img {
+    width: 70%;
+    height: 70%; } }
+
+@media (max-width: 1200px) {
+  .imagen-con-fondo img {
+    width: 70%;
+    height: 70%; } }
+
+@media (min-width: 1025px) {
+  .imagen-con-fondo img {
+    width: 80%;
+    height: 80%; } }
 
 h1 {
   text-align: center;
