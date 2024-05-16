@@ -344,6 +344,12 @@ nav {
 .btn-custom {
   color: white; }
 
+ul .navbar-nav .me-auto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; }
+
 .navbar-nav .nav-item a {
   color: white;
   text-decoration: none; }
@@ -555,7 +561,7 @@ nav {
         text-align: center; }
     .ecotienda .product-container .product__description {
       text-align: center;
-      padding: 0;
+      padding: 0.40px;
       text-align: center;
       margin: .2em 0;
       color: #c00c60a2;
@@ -594,16 +600,18 @@ nav {
 
 .payment-methods {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 20px; }
   .payment-methods h4 {
     font-size: 28px;
     font-weight: 200;
-    color: #c00c60a2; }
+    color: #c00c60a2;
+    padding-right: 20px; }
   .payment-methods img {
-    width: 50%; }
+    width: 300px; }
 
 /*----------------- NUESTROS PRODUCTOS ENDS ---------------*/
 /*----------------- NUESTRO PLANETA SECTIONS ---------------*/

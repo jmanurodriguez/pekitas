@@ -54,6 +54,7 @@ nav {
   }
 }
 
+
 .ul__link:hover,
 .ul__link:focus {
   background-color: $hover-color;
@@ -68,6 +69,16 @@ nav {
 }
 .btn-custom {
   color: white;
+}
+ul {
+  .navbar-nav {
+    .me-auto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+  }
 }
 .navbar-nav .nav-item a {
   color: white; 
