@@ -331,6 +331,18 @@ nav {
         text-decoration: none;
         transition: padding 0.4s ease; }
 
+.btn {
+  background-color: transparent;
+  border: none; }
+
+.btn:hover {
+  background-color: transparent;
+  border: none;
+  color: #fff; }
+
+.btn-primary:focus {
+  box-shadow: none; }
+
 .ul__link:hover,
 .ul__link:focus {
   background-color: #f10c8a1d;
@@ -369,16 +381,16 @@ ul .navbar-nav .me-auto {
     align-items: center; }
   .search-container input[type="search"] {
     margin-right: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
     padding: 10px;
     font-size: 16px;
     background-color: #f2f2f2; }
   .search-container input[type="submit"] {
     color: #fff;
-    background-color: #da2f8564;
+    background-image: linear-gradient(#d42d97e2, #cd1a6e2a);
     border: none;
-    border-radius: 23px;
+    border-radius: 15px;
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
@@ -462,23 +474,23 @@ ul .navbar-nav .me-auto {
       transition: .4s ease-in;
       cursor: pointer; }
       .gallery .gallery__project-container .gallery__project:nth-child(1) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://res.cloudinary.com/dpcpcnqmq/image/upload/fl_preserve_transparency/v1714878021/batido_qemjwp.jpg?_s=public-apps"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://i.ibb.co/7VjXW7b/batido-10-11zon.webp"); }
       .gallery .gallery__project-container .gallery__project:nth-child(2) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://res.cloudinary.com/dpcpcnqmq/image/upload/fl_preserve_transparency/v1714878021/balsamo-labial_wsinrv.jpg?_s=public-apps"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://i.ibb.co/82nTTrR/balsamo-labial.jpg"); }
       .gallery .gallery__project-container .gallery__project:nth-child(3) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://res.cloudinary.com/dpcpcnqmq/image/upload/fl_preserve_transparency/v1714878023/sepillo_lievq5.jpg?_s=public-apps"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://i.ibb.co/41v2mwV/sepillo-32-11zon.webp"); }
       .gallery .gallery__project-container .gallery__project:nth-child(4) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://res.cloudinary.com/dpcpcnqmq/image/upload/fl_preserve_transparency/v1714878022/vela_z7dsf8.jpg?_s=public-apps"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://i.ibb.co/zm0hJGX/index-3-19-11zon.webp"); }
       .gallery .gallery__project-container .gallery__project:nth-child(5) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://res.cloudinary.com/dpcpcnqmq/image/upload/fl_preserve_transparency/v1714878021/spray-sandia_zltdi6.jpg?_s=public-apps"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://i.ibb.co/whBjt5H/index-4-20-11zon.webp"); }
       .gallery .gallery__project-container .gallery__project:nth-child(6) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://res.cloudinary.com/dpcpcnqmq/image/upload/fl_preserve_transparency/v1714918811/desodorante-solido_d3gqst.jpg?_s=public-apps"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://i.ibb.co/CsM13Wr/desodorante-solido-16-11zon.webp"); }
       .gallery .gallery__project-container .gallery__project:nth-child(7) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://res.cloudinary.com/dpcpcnqmq/image/upload/fl_preserve_transparency/v1714916388/crema-para-peinar-mango_f4kotv.jpg?_s=public-apps"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://i.ibb.co/ChvYFp6/crema-para-peinar-mango.jpg"); }
       .gallery .gallery__project-container .gallery__project:nth-child(8) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://res.cloudinary.com/dpcpcnqmq/image/upload/fl_preserve_transparency/v1714878023/sales_zkpc42.jpg?_s=public-apps"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://i.ibb.co/SvzmqmF/sales-31-11zon.webp"); }
       .gallery .gallery__project-container .gallery__project:nth-child(9) {
-        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://res.cloudinary.com/dpcpcnqmq/image/upload/fl_preserve_transparency/v1714878022/jabon-natural2_v3kjtv.jpg?_s=public-apps"); }
+        background-image: linear-gradient(#bb0374ad, #d0124848), url("https://i.ibb.co/wrsVWD0/jabon-natural2-22-11zon.webp"); }
       .gallery .gallery__project-container .gallery__project:hover {
         opacity: 0.74;
         outline: 2px solid #fff6; }
@@ -544,9 +556,11 @@ ul .navbar-nav .me-auto {
   .ecotienda .product_title {
     color: #c3038d; }
   .ecotienda .product-container {
+    padding-top: 10px;
     display: grid;
     justify-content: center;
-    border: solid 1px #6bd70c; }
+    border: solid 1px #6bd70c;
+    margin-top: 10px; }
     .ecotienda .product-container .product-price {
       display: flex;
       justify-content: center;
@@ -565,7 +579,7 @@ ul .navbar-nav .me-auto {
       text-align: center;
       padding: 0.40px;
       text-align: center;
-      margin: .2em .2em .2em;
+      margin: .2em .2em .2em .2em;
       color: #c00c60a2;
       text-align: center;
       font-size: 12px;
