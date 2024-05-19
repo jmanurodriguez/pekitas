@@ -30,71 +30,82 @@
     <!-- Menu de Navegación -->
         <!-- Inicio del menu -->
     
-        <nav class="navbar navbar-expand-md navbar-dark bg-custom">
-          <div class="container-fluid d-flex justify-content-center align-items-center">
-            <!-- enlaces redes sociales -->
-            <ul class="navbar-nav flex-row justify-content-center text-light">
-              <li class="nav-item col-6 col-md-auto p-3">
-                <a href="#" target="_blank">
-                  <i class="bi bi-twitter"></i>
-                  <small class="d-md-none ms-2">Twitter</small>
-                </a>
+      <!-- Menu de Navegación -->
+      <!-- Inicio del menu -->
+  
+      <nav class="navbar navbar-expand-md navbar-dark bg-custom">
+        <div class="container-fluid">
+          <!-- boton del menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- elementos del menu colapsable -->
+          <div class="collapse navbar-collapse ul__list" id="menu">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item ul__item">
+                <a class="nav-link ul__link" href="./index.html">Inicio</a>
               </li>
-              <li class="nav-item col-6 col-md-auto p-3">
-                <a href="#" target="_blank">
-                  <i class="bi bi-instagram"></i>
-                  <small class="d-md-none ms-2">Instagram</small>
-                </a>
+              <li class="nav-item ul__item">
+                <a class="nav-link ul__link" href="./pages/nuestros-productos.html">Nuestros Productos</a>
               </li>
-              <li class="nav-item col-6 col-md-auto p-3">
-                <a href="#" target="_blank">
-                  <i class="bi bi-whatsapp"></i>
-                  <small class="d-md-none ms-2">WhatsApp</small>
-                </a>
+              <li class="nav-item ul__item">
+                <a class="nav-link ul__link" href="./pages/nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item col-6 col-md-auto p-3">
-                <a href="#" target="_blank">
-                  <i class="bi bi-facebook"></i>
-                  <small class="d-md-none ms-2">Facebook</small>
-                </a>
+              <li class="nav-item ul__item">
+                <a class="nav-link ul__link" href="./pages/nuestro-planeta.html">Nuestro Planeta</a>
+              </li>
+              <li class="nav-item ul__item">
+                <a class="nav-link ul__link" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>
-      
-            <!-- boton del menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <!-- elementos del menu colapsable -->
-            <div class="collapse navbar-collapse justify-content-center ul__list" id="menu">
-              <ul class="navbar-nav me-auto justify-content-center flex-grow-1">
-                <li class="nav-item ul__item">
-                  <a class="nav-link ul__link" href="./index.html">Inicio</a>
+            <hr class="d-md-none text-white-50">
+    
+            <!-- enlaces redes sociales -->
+  
+            <ul class="navbar-nav  flex-row flex-wrap text-light">
+                <li class="nav-item col-6 col-md-auto p-3">
+                  <a href="#" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                    <small class="d-md-none ms-2">Twitter</small>
+                  </a>
                 </li>
-                <li class="nav-item ul__item">
-                  <a class="nav-link ul__link" href="./pages/nuestros-productos.html">Nuestros Productos</a>
+              
+                <li class="nav-item col-6 col-md-auto p-3">
+                  <a href="#" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                    <small class="d-md-none ms-2">Instagram</small>
+                  </a>
                 </li>
-                <li class="nav-item ul__item">
-                  <a class="nav-link ul__link" href="./pages/nosotros.html">Nosotros</a>
+              
+                <li class="nav-item col-6 col-md-auto p-3">
+                  <a href="#" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                    <small class="d-md-none ms-2">WhatsApp</small>
+                  </a>
                 </li>
-                <li class="nav-item ul__item">
-                  <a class="nav-link ul__link" href="./pages/nuestro-planeta.html">Nuestro Planeta</a>
-                </li>
-                <li class="nav-item ul__item">
-                  <a class="nav-link ul__link" href="./pages/contacto.html">Contacto</a>
+              
+                <li class="nav-item col-6 col-md-auto p-3">
+                  <a href="#" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                    <small class="d-md-none ms-2">Facebook</small>
+                  </a>
                 </li>
               </ul>
-            </div>
-      
-            <!-- barra de busqueda -->
-            <div class="search-container ml-auto justify-content-center">
+           
+      <!-- Barra de busqueda -->
+           <form class="d-flex">
+            <button class="btn btn-custom d-none d-md-inline-block" type="submit">Información</button>
+           </form>
+            <div class="search-container">
               <form action="/ruta_de_busqueda" method="get">
-                <input type="search" name="q" placeholder="Buscar...">
-                <input type="submit" value="enviar">
+                  <input type="search" name="q" placeholder="Buscar...">
+                  <input type="submit" value="enviar">
               </form>
-            </div>
           </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
 
     
 
