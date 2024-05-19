@@ -882,7 +882,8 @@ h4 {
   text-decoration: none;
   color: #fff; }
 
-.redes_title {
+div.box span.redes_title {
+  text-align: center;
   color: #fff; }
 
 /*---------------- NAV QUERIES ----------- */
