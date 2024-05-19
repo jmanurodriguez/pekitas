@@ -882,6 +882,9 @@ h4 {
   text-decoration: none;
   color: #fff; }
 
+.redes_title {
+  color: #fff; }
+
 /*---------------- NAV QUERIES ----------- */
 /* Estilos para móviles */
 @media only screen and (max-width: 480px) {
